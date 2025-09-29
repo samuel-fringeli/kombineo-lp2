@@ -12,7 +12,7 @@ import { useEffect, useRef, useState } from "react";
 import Enter2 from "../assets/Vector2.svg";
 import app from "../assets/apps_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24 1.svg";
 import pp from "../assets/image 65.svg";
-import sideImage from "../assets/AI.svg";
+import sideImage from "../assets/KPI.png";
 import group from "../assets/FirstImage.svg";
 import bar from "../assets/Frame 2147224427.svg";
 import { gsap as gsapLib } from "gsap";
@@ -25,11 +25,11 @@ import fifth from '../assets/Maxence tunnel de vente.png'
 import sixth from '../assets/antoine reydel.jpeg.jpg'
 import seventh from '../assets/ossama .png'
 import eighth from '../assets/simon.jpeg.jpg'
-import CockpitImage from '../assets/cockpit.jpeg'
-import settingImage from '../assets/setting.jpeg'
-import AppealsImage from '../assets/closing.jpeg'
-import FellowImage from '../assets/followup.jpeg'
-import CommImage from '../assets/commission.jpeg'
+import CockpitImage from '../assets/Cockpit IA.png'
+import settingImage from '../assets/A setting.png'
+import AppealsImage from '../assets/closing calls.png'
+import FellowImage from '../assets/Follow upp.png'
+import CommImage from '../assets/commissions.png'
 import LogoCard1 from '../assets/1-tibtalks.png'
 import LogoCard2 from '../assets/2-daronsdubiz.png'
 import LogoCard3 from '../assets/3-vortex.png'
