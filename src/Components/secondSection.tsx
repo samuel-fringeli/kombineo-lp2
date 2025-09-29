@@ -11,7 +11,7 @@ import image from "../assets/ArrowGradient.svg";
 import { useEffect, useRef, useState } from "react";
 import Enter2 from "../assets/Vector2.svg";
 import app from "../assets/apps_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24 1.svg";
-import pp from "../assets/image 65.svg";
+// import pp from "../assets/image 65.svg";
 import sideImage from "../assets/KPI.png";
 import group from "../assets/FirstImage.svg";
 import bar from "../assets/Frame 2147224427.svg";
@@ -649,25 +649,9 @@ const Cards = () => {
                       >
                         {feature.description}
                       </p>
-
-                      <div className="flex items-center justify-start mt-4 space-x-4">
-                        <img
-                          src={pp || "/placeholder.svg"}
-                          alt="Customer testimonial profile"
-                          className="w-10 h-10 rounded-full"
-                        />
-                        <blockquote className="text-[#5BA7B7] font-inter font-normal text-[14px] sm:text-[16px] transition-all duration-500">
-                          "{feature.testimonials}"
-                        </blockquote>
-                      </div>
-
-
                     </div>
                   </>
                 ))}
-                {/* <div className="pt-[210%]">
-                        <p>jkerwhrehkrehk</p>
-                      </div> */}
               </div>
             </div>
 
@@ -683,7 +667,7 @@ const Cards = () => {
                 variants={{}}
                 src={features[activeIndex]?.img2 || "/placeholder.svg"}
                 alt={features[activeIndex]?.title || "Feature image"}
-                className="w-full h-auto"
+                className="w-full h-auto rounded-xl"
                 loading="lazy"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
