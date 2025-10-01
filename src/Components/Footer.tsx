@@ -1,7 +1,7 @@
 import Enter2 from '../assets/Vector2.svg'
 import right from '../assets/wave-right.svg'
 import left from '../assets/wave-left.svg'
-import klogo from '../assets/KL.svg'
+import klogo from '../assets/FooterLogo.svg'
 import linkedIn from '../assets/Lin.svg'
 import instagram from '../assets/instra.svg'
 import whatsapp from '../assets/image 67.svg'

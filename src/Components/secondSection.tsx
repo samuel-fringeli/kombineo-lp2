@@ -431,7 +431,7 @@ const Cards = () => {
                 <motion.div
                   className="flex space-x-10 lg:w-[300%] md:w-[300%] sm:w-[500%] w-[600%] mr-14"
                   variants={{}}
-                  animate={{ x: ["-50%", "0%"] }}
+                  animate={{ x: ["-32%", "0%"] }}
                   transition={{
                     duration: 25,
                     ease: "linear",
@@ -552,7 +552,9 @@ const Cards = () => {
       </div>
 
       {/* GSAP Pin Feature Section */}
-      <div ref={featureSectionRef} className="relative">
+
+      <div className="-mt-32">
+        <div ref={featureSectionRef} className="relative">
         {/* Pin Wrapper - This gets pinned by GSAP */}
         <div
           ref={pinWrapperRef}
@@ -680,6 +682,8 @@ const Cards = () => {
           </div>
         </div>
       </div>
+      </div>
+      
 
       <div className="max-w-4xl mx-auto text-center mt-30">
         <div className="">

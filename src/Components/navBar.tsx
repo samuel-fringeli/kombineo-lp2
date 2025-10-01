@@ -27,7 +27,7 @@ export default function ResponsiveNavbar() {
   return (
     <header className="w-full relative">
       <div className="w-[80%] md:w-[90%] lg:w-[60%] rounded-2xl mx-auto shadow-lg fixed top-1 left-0 right-0 z-50 border-[5px] border-[#0000000D]">
-        <nav className="w-full bg-white p-2 rounded-2xl">
+        <nav className="w-full bg-white p-2 rounded-lg">
           <div className="flex justify-between items-center">
             <div className="flex justify-center items-center gap-0">
               <Link to={'/'}>

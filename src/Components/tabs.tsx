@@ -125,9 +125,10 @@ const TabCard: React.FC = () => {
                 <div className="flex-1 space-y-4">
                     {/* <h2 className="text-2xl font-bold text-gray-900  text-center"></h2> */}
                     <h2
-                        className="lg:text-[32px] md:text-[32px] sm:text-[32px] text-[25px] font-bold leading-10 lg:text-start md:text-center text-center sm:text-center bg-[linear-gradient(99.96deg,#111111_-1.71%,#777777_89.24%)] bg-clip-text text-transparent"
+                        className="lg:text-[31px] md:text-[32px] sm:text-[32px] text-[25px] font-bold leading-10 lg:text-start md:text-center text-center sm:text-center bg-[linear-gradient(99.96deg,#111111_-1.71%,#777777_89.24%)] bg-clip-text text-transparent"
                     >
-                    {activeTab.title}
+                    {/* {activeTab.title} */}
+                    Gagnez du temps, <br /> multipliez vos ventes
                 </h2>
                 <div className="flex lg:justify-start md:justify-center sm:justify-center justify-center items-center">
                     <button
