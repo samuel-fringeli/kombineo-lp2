@@ -21,12 +21,12 @@ const featuresPower: string[] = [
 const EnterpriseBadge: React.FC = () => (
     <div className="flex items-center gap-2 text-sm text-slate-600">
         <div className="relative w-9 h-9">
-  <img
-    src={ProfileImage}
-    alt="Profile"
-    className="w-full h-full rounded-full object-cover shadow-sm "
-  />
-</div>
+            <img
+                src={ProfileImage}
+                alt="Profile"
+                className="w-full h-full rounded-full object-cover shadow-sm "
+            />
+        </div>
         <div className="leading-tight">
             <div className="font-medium text-[#035E71]">Henri Darnet</div>
             <div className="text-xs text-[#247A8C80]">CEO à <span className="text-[#035E71]">Mindeo</span> </div>
@@ -73,9 +73,12 @@ const Price: React.FC<PriceProps> = ({ amount, per = "per month", after = "factu
     <div className="mt-2">
         <div className="flex items-end gap-1">
             <span className="text-4xl font-semibold tracking-tight text-[€#111111]">€{amount}</span>
-            <span className="mb-1 text-[#4C4C4C] text-sm">{per}</span>
+            <div className="text-start">
+                <span className="mb-1 text-[#4C4C4C] text-sm">{per}</span>
+                <div className="text-[#4C4C4C] text-xs">{after}</div>
+            </div>
+
         </div>
-        <div className="text-[#4C4C4C] text-xs">{after}</div>
     </div>
 );
 
@@ -83,7 +86,7 @@ interface FeatureProps {
     children: React.ReactNode;
 }
 const Feature: React.FC<FeatureProps> = ({ children }) => (
-    <li className="flex items-start gap-3">
+    <li className="flex items-start gap-1.5">
         <span className="mt-1 text-emerald-500"><Check /></span>
         <span className="text-sm text-slate-700">{children}</span>
     </li>
@@ -94,11 +97,11 @@ const PricingSection: React.FC = () => {
         <section className="relative py-12 sm:py-16">
             <Background />
 
-            <div className="mx-auto max-w-6xl px-0 sm:px-6">
+            <div className="mx-auto max-w-5xl px-0 sm:px-6">
                 {/* Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
                     {/* SCALE */}
-                    <Card className="p-6 sm:p-6 flex flex-col">
+                    <Card className="p-6 sm:p-5 flex flex-col">
                         <div className="text-sm font-semibold tracking-wide text-[#1E1E1E] text-start">SCALE</div>
                         <p className="text-sm text-[#4C4C4C] text-start">Parfait pour les petites équipes et les startups.</p>
                         <Price amount={29} />
@@ -115,13 +118,9 @@ const PricingSection: React.FC = () => {
                                 <Feature key={f}>{f}</Feature>
                             ))}
                         </ul>
-
-
-
                     </Card>
-
                     {/* POWER - highlighted */}
-                    <Card className="relative p-6 sm:p-6 flex flex-col ring-2 ring-[#E49600] shadow-lg">
+                    <Card className="relative p-6 sm:p-5 flex flex-col ring-2 ring-[#E49600] shadow-lg">
                         <div className="absolute -top-4 -right-4 -translate-x-1/2 ">
                             <div style={{ background: "radial-gradient(circle, #FFCF72, #E49600)", }} className="px-3 py-1 rounded-full  text-white text-[12px] font-normal tracking-wide shadow">
                                 LE PLUS POPULAIRE
@@ -146,7 +145,7 @@ const PricingSection: React.FC = () => {
                     </Card>
 
                     {/* ENTERPRISE */}
-                    <Card className="p-6 sm:p-6 flex flex-col">
+                    <Card className="p-6 sm:p-5 flex flex-col">
                         <div className="text-sm font-semibold tracking-wide text-[#1E1E1E] text-start">Enterprise</div>
                         <p className="mt-1 text-sm text-[#4C4C4C] text-start">Conçu pour répondre aux besoins des grandes organisations.</p>
                         <Price amount={129} />
@@ -161,8 +160,8 @@ const PricingSection: React.FC = () => {
                         </div>
 
                         <button style={{
-                                background: "linear-gradient(90deg, #035E71 0%, #5DA9B9 28.37%, #035E71 76.92%)",
-                            }} className="mt-40 inline-flex justify-center rounded-lg  text-white px-4 py-2.5 text-sm hover:text-black font-medium shadow hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-400/60">
+                            background: "linear-gradient(90deg, #035E71 0%, #5DA9B9 28.37%, #035E71 76.92%)",
+                        }} className="mt-40 inline-flex justify-center rounded-lg  text-white px-4 py-2.5 text-sm hover:text-black font-medium shadow hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-400/60">
                             Booker une démo
                         </button>
                     </Card>

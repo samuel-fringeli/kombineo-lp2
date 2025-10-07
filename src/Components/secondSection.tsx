@@ -38,6 +38,8 @@ import LogoCard5 from '../assets/5-maxen.png'
 import LogoCard6 from '../assets/6-antoinereydel.png'
 import LogoCard7 from '../assets/7-salesmindset.png'
 import LogoCard8 from '../assets/8-agenceaiaa.png'
+import GrayArrow from '../assets/GrayArrow.svg'
+
 // Register ScrollTrigger
 gsapLib.registerPlugin(ScrollTrigger);
 
@@ -197,14 +199,14 @@ const Cards = () => {
 
   const cardTop = [
     {
-      image: first,
-      highlight: "+100%",
-      title: "de Chiffre d’affaire",
+      image: fifth,
+      highlight: "+16%",
+      title: "de prise de rendez vous",
       review:
-        "J’ai pu doubler mon taux de closing grâce aux analyses des dashboards personnalisés, et mes équipes ont tout de suite bien compris comment les utiliser efficacement",
-      name: "Tibtalks",
+        "Grâce au setting intégré, j’ai augmenté mes prises de RDV : Kombineo est le seul sur le marché qui fait ça directement depuis la landing page.",
+      name: "Maxence Rigottier",
       role: "CEA",
-      company: "Magic Consulting",
+      company: "Tunnel-de-vente.fr",
       tag: "Infopreneur",
       bgColor: "#FFFFFF",
       highlightColor: "#035E71",
@@ -216,7 +218,7 @@ const Cards = () => {
       tagBgColor:
         "bg-[linear-gradient(98.23deg,#035E71_-6.67%,#5DA9B9_45.08%,#035E71_97.28%)]",
       companyColor: "#035E71E5",
-      title2: LogoCard1,
+      title2: LogoCard5,
       ticket: secondticket,
     },
     {
@@ -251,18 +253,18 @@ const Cards = () => {
       role: "CEA",
       company: "Vortex",
       tag: "Challenge",
-      bgColor: "#FFFFFF",
-      highlightColor: "#035E71",
-      titleColor: "#0000004D",
-      reviewColor: "#000000",
-      nameColor: "#035E71",
-      roleColor: "#247A8C80",
-      tagTextColor: "#ffffff",
+      bgColor: "bg-gradient-to-r from-[#5DA9B9] via-[#035E71] to-[#035E71]",
+      highlightColor: "#ffffff",
+      titleColor: "#B9F3FFCC",
+      reviewColor: "#ffffff",
+      nameColor: "#ffffff",
+      roleColor: "#FFFFFF80",
+      tagTextColor: "#111111",
       tagBgColor:
-        "bg-gradient-to-r from-[#035E71] via-[#5DA9B9] to-[#035E71] to-[#035E71]",
-      companyColor: "#035E71E5",
+        "#ffffff",
+      companyColor: "#FFFFFFE5",
       title2: LogoCard3,
-      ticket: secondticket,
+      ticket: ticket,
     },
     {
       image: fourth,
@@ -290,14 +292,14 @@ const Cards = () => {
 
   const cardBelow = [
     {
-      image: fifth,
-      highlight: "+16%",
-      title: "de prise de rendez vous",
+      image: first,
+      highlight: "+100%",
+      title: "de Chiffre d’affaire",
       review:
-        "Grâce au setting intégré, j’ai augmenté mes prises de RDV : Kombineo est le seul sur le marché qui fait ça directement depuis la landing page",
-      name: "Maxence Rigottier",
+        "J’ai pu doubler mon taux de closing grâce aux analyses des dashboards personnalisés, et mes équipes ont tout de suite bien compris comment les utiliser efficacement.",
+      name: "Tibtalks",
       role: "CEA",
-      company: "Tunnel-de-vente.fr",
+      company: "Magic Consulting",
       tag: "Infopreneur",
       bgColor: "bg-gradient-to-r from-[#5DA9B9] via-[#035E71] to-[#035E71]",
       highlightColor: "#ffffff",
@@ -308,8 +310,31 @@ const Cards = () => {
       tagTextColor: "#111111",
       tagBgColor: "#FFFFFF",
       companyColor: "#FFFFFFE5",
-      title2: LogoCard5,
+      title2: LogoCard1,
       ticket: ticket,
+    },
+    {
+      image: seventh,
+      highlight: "2x",
+      title: "plus d’opportunités",
+      review:
+        "Intégrer Kombineo est la première chose que je fais quand je veux faire performer un écosystème et garantir mes résultats.",
+      name: "Ossama Ramhry",
+      role: "CEA",
+      company: "SalesMindset",
+      tag: "Head of Sales",
+      bgColor: "#FFFFFF",
+      highlightColor: "#035E71",
+      titleColor: "#0000004D",
+      reviewColor: "#000000",
+      nameColor: "#035E71",
+      roleColor: "#247A8C80",
+      tagTextColor: "#ffffff",
+      tagBgColor:
+        "bg-gradient-to-r from-[#035E71] via-[#5DA9B9] to-[#035E71] to-[#035E71]",
+      companyColor: "#035E71E5",
+      title2: LogoCard7,
+      ticket: secondticket,
     },
     {
       image: sixth,
@@ -321,29 +346,6 @@ const Cards = () => {
       role: "CEA",
       company: "Reydel Coaching",
       tag: "Coach",
-      bgColor: "#FFFFFF",
-      highlightColor: "#035E71",
-      titleColor: "#0000004D",
-      reviewColor: "#000000",
-      nameColor: "#035E71",
-      roleColor: "#247A8C80",
-      tagTextColor: "#ffffff",
-      tagBgColor:
-        "bg-gradient-to-r from-[#035E71] via-[#5DA9B9] to-[#035E71] to-[#035E71]",
-      companyColor: "#035E71E5",
-      title2: LogoCard6,
-      ticket: secondticket,
-    },
-    {
-      image: seventh,
-      highlight: "2x",
-      title: "plus d’opportunités",
-      review:
-        "Intégrer Kombineo est la première chose que je fais quand je veux faire performer un écosystème et garantir mes résultats",
-      name: "Ossama Ramhry",
-      role: "CEA",
-      company: "SalesMindset",
-      tag: "Head of Sales",
       bgColor: "bg-gradient-to-r from-[#5DA9B9] via-[#035E71] to-[#035E71]",
       highlightColor: "#ffffff",
       titleColor: "#B9F3FFCC",
@@ -353,7 +355,7 @@ const Cards = () => {
       tagTextColor: "#111111",
       tagBgColor: "#FFFFFF",
       companyColor: "#FFFFFFE5",
-      title2: LogoCard7,
+      title2: LogoCard6,
       ticket: ticket,
     },
     {
@@ -482,17 +484,28 @@ const Cards = () => {
             >
               <h1 className="relative text-2xl sm:text-3xl md:text-3xl lg:text-[40.77px] font-geist font-semibold mb-4 text-start">
                 {active === "bonjour" ? (
-                  <span className="bg-gradient-to-r from-[#035E71] via-[#5DA9B9] to-[#035E71] bg-clip-text text-transparent">
+                  <>
+                    <span className="text-[#6E6E6E]">
                     Dites adieu à
                   </span>
+                  <img
+                  src={GrayArrow}
+                  alt="Decorative"
+                  className="absolute -top-14 sm:-top-20 md:-top-24 left-20 sm:left-36 md:left-34 w-20 sm:w-30 md:w-36"
+                />
+                  </>
                 ) : (
-                  <span className="text-[#6E6E6E]">Dites bonjour à</span>
-                )}
-                <img
+                  <>
+                  <span  className="bg-gradient-to-r from-[#035E71] via-[#5DA9B9] to-[#035E71] bg-clip-text text-transparent">Dites bonjour à</span>
+                   <img
                   src={image}
                   alt="Decorative"
                   className="absolute -top-14 sm:-top-20 md:-top-24 left-20 sm:left-36 md:left-34 w-20 sm:w-30 md:w-36"
                 />
+                  </>
+                )}
+                
+                
               </h1>
             </div>
 
@@ -500,14 +513,14 @@ const Cards = () => {
             <div className="flex-1">
               <ul className="font-semibold text-base sm:text-xl md:text-3xl lg:text-[30px] text-start space-y-12 sm:space-y-12">
                 {active === "bonjour" ? (
-                  <div className="transition-all duration-700 bg-gradient-to-r from-[#035E71] via-[#5DA9B9] to-[#035E71] bg-clip-text text-transparent space-y-2">
+                  <div className="transition-all duration-700 text-[#6E6E6E]  space-y-2">
                     <li>Une dispersion des leads</li>
                     <li>Des relances oubliées</li>
                     <li>Des décisions à l’aveugle</li>
                     <li>Des tableaux de bord incomplets</li>
                   </div>
                 ) : (
-                  <div className="transition-all duration-700 text-[#6E6E6E] space-y-2">
+                  <div className="transition-all duration-700 bg-gradient-to-r from-[#035E71] via-[#5DA9B9] to-[#035E71] bg-clip-text text-transparent space-y-2">
                     <li>Un cockpit IA</li>
                     <li>Un suivi des leads optimisés</li>
                     <li>Des KPI en temps réel</li>
@@ -646,7 +659,7 @@ const Cards = () => {
                         {feature.title}
                       </h1>
                       <p
-                        className="font-semibold pt-0 text-md text-[#333333] transition-all duration-500 "
+                        className="font-semibold pt-0 text-lg text-[#333333] transition-all duration-500 "
                         aria-describedby={`feature-title-${index}`}
                       >
                         {feature.description}

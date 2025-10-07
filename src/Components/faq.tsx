@@ -45,7 +45,7 @@ const faqs: FaqItem[] = [
     },
      {
         question:
-            "EPuis-je gérer plusieurs missions ou clients en même temps ?",
+            "Puis-je gérer plusieurs missions ou clients en même temps ?",
         answer:
             "Oui, Kombineo a été conçu pour les closers multi-missions. Vous pouvez suivre chaque deal, chaque commission et chaque KPI sans jamais mélanger vos données.",
         defaultOpen: true,

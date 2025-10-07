@@ -2,6 +2,7 @@ import calendar from '../assets/Calendar.svg'
 import arrow from '../assets/PricingArrow.svg'
 import task from '../assets/Tasks.svg'
 import Navbar from './navBar'
+import ticket from '../assets/Vector.svg'
 // import bgImage from "../assets/bg.svg";
 import bgImage from "../assets/NewBg.svg";
 import { useState } from 'react';
@@ -20,7 +21,12 @@ const Hero = () => {
                 <div className='max-w-7xl mx-auto px-4 lg:px-6 pt-30 pb-6'>
 
                     {/* Badge */}
-                    <div className="inline-flex items-center px-4 py-2 backdrop-blur-sm rounded-full text-sm text-white mb-8 border-[1px] border-[#0A8BA6] bg-[#045F72] font-inter font-medium">
+                    <div className="inline-flex items-center px-4 py-2 backdrop-blur-sm rounded-full text-sm text-[#035E71] mb-8 border border-[#0A8BA6] bg-[#045F721A] font-inter font-medium">
+                        <img
+                            src={ticket}
+                            alt="icon"
+                            className="w-5 h-5 mr-2"
+                        />
                         Exclus : Business high ticket
                     </div>
 
@@ -53,8 +59,8 @@ const Hero = () => {
                             {/* Monthly Label */}
                             <span
                                 className={`${isMonthly
-                                        ? "bg-gradient-to-r from-[#035E71] via-[#5DA9B9] to-[#035E71] bg-clip-text text-transparent"
-                                        : "text-gray-600"
+                                    ? "bg-gradient-to-r from-[#035E71] via-[#5DA9B9] to-[#035E71] bg-clip-text text-transparent"
+                                    : "text-gray-600"
                                     } text-sm sm:text-base`}
                             >
                                 Abonnement Mensuel
@@ -74,8 +80,8 @@ const Hero = () => {
                             {/* Annual Label */}
                             <span
                                 className={`${!isMonthly
-                                        ? "bg-gradient-to-r from-[#035E71] via-[#5DA9B9] to-[#035E71] bg-clip-text text-transparent"
-                                        : "text-gray-600"
+                                    ? "bg-gradient-to-r from-[#035E71] via-[#5DA9B9] to-[#035E71] bg-clip-text text-transparent"
+                                    : "text-gray-600"
                                     } text-sm sm:text-base`}
                             >
                                 Économisez avec l'abonnement annuel
@@ -98,12 +104,8 @@ const Hero = () => {
                                 Jusqu’à -51%
                             </button>
                         </div>
-
                     </div>
-
-
-                    <Plans/>
-
+                    <Plans />
                 </div>
             </div>
         </div>

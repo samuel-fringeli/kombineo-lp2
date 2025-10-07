@@ -14,7 +14,7 @@ const Footer = () => {
       }}
     >
       {/* Hero Section */}
-      <div className="   mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
+      <div className="   mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 mt-20">
         <div className="w-[95%]  mx-auto p-6 sm:p-8 lg:p-12 bg-white rounded-2xl sm:rounded-3xl shadow-xl">
           <div className="text-center  space-y-4 sm:space-y-6 lg:space-y-8">
             <h1 className="font-Geist font-semibold text-gray-800 leading-tight lg:text-[70px] md:text-[50px] sm:text-[35px] text-[35px]">
