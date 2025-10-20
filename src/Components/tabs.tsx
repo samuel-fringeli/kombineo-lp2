@@ -43,12 +43,12 @@ const tabsData: Tab[] = [
         company: "Darons du Biz",
         reviewerImage: logo,
         logo: logo,
-        img2:Infopreneur
+        img2: Infopreneur
     },
     {
         label: "Manager",
         image: Manager,
-                title: "Gagnez du temps, multipliez vos ventes",
+        title: "Gagnez du temps, multipliez vos ventes",
         subtitle: "Augmentez vos conversions et atteignez vos clients idéaux.",
         checklist: ["Prise de décisions agiles", "Onboarding sales simplifié", "Prévisionnel et tendance des ventes"],
         review:
@@ -82,7 +82,7 @@ const tabsData: Tab[] = [
         title: "Gagnez du temps, multipliez vos ventes",
         subtitle: "Conçu pour s'adapter à vos besoins business.",
         checklist: ["Aide à la vente et à l’upsell", "Optimisation du CA clients", "Marketing suivi en temps réel"],
-        review: "Un outil puissant qui s'adapte vraiment à mes besoins.",
+        review: "Kombineo a transformé ma façon de travailler — tout est plus fluide, rapide et efficace !",
         reviewer: "Marc Lopez",
         role: "Entrepreneur",
         company: "StartupX",
@@ -110,8 +110,8 @@ const TabCard: React.FC = () => {
                             : "bg-gray-50 border-[#E4DFDC] border-[1px] text-gray-600 hover:bg-white"
                             }`}
                     >
-                    {idx === activeIndex ? <img className="w-5 h-5" src={tab.img2} alt={tab.label} /> : <img className="w-5 h-5" src={tab.image} alt={tab.label} /> }
-                        
+                        {idx === activeIndex ? <img className="w-5 h-5" src={tab.img2} alt={tab.label} /> : <img className="w-5 h-5" src={tab.image} alt={tab.label} />}
+
                         {tab.label}
                     </button>
                 ))}
@@ -127,64 +127,43 @@ const TabCard: React.FC = () => {
                     <h2
                         className="lg:text-[31px] md:text-[32px] sm:text-[32px] text-[25px] font-bold leading-10 lg:text-start md:text-center text-center sm:text-center bg-[linear-gradient(99.96deg,#111111_-1.71%,#777777_89.24%)] bg-clip-text text-transparent"
                     >
-                    {/* {activeTab.title} */}
-                    Gagnez du temps, <br /> multipliez vos ventes
-                </h2>
-                <div className="flex lg:justify-start md:justify-center sm:justify-center justify-center items-center">
-                    <button
-                        style={{
-                            background:
-                                "linear-gradient(224.64deg, rgba(228, 150, 0, 0.8) 7.14%, #C88400 90.37%)",
-                            boxShadow: "0 8px 25px rgba(255, 215, 0, 0.3)", // blurry gold shadow
-                        }}
-                        className="lg:mt-10 md:mt-10 sm:mt-5 mt-0 cursor-pointer text-white lg:px-8 md:px-8 sm:px-5 px-1 py-3 font-semibold mb-12 rounded-lg lg:space-x-5 md:space-x-5 sm:space-x-3 space-x-1 hover:text-black"                   >
-                        Essai gratuit de 7 jours
-                    </button>
-                </div>
-                {/* <p className="text-gray-700">{activeTab.subtitle}</p> */}
-
-            </div>
-
-            {/* Right Side */}
-            <div className="flex-1 space-y-4 lg:-ml-5 md:-ml-5 sm:-ml-5 -ml-0">
-                <ul className="space-y-4">
-                    {activeTab.checklist.map((item, idx) => (
-                        <li key={idx} className="flex items-center space-x-1">
-                            {/* <span className="w-5 h-5 bg-gradient-to-r from-[#5DA9B9] to-[#035E71] text-white flex items-center justify-center rounded-full text-sm">
-                  ✓
-                </span> */}
-                            <img src={container} alt="" />
-                            <span className="text-[#4C4C4C] font-medium lg:text-[16px] md:text-[16px] sm:text-[16px] text-[12px]">{item}</span>
-                        </li>
-                    ))}
-                </ul>
-
-                {/* Testimonial */}
-                <div className="lg:flex md:flex sm:flex block justify-center items-start gap-3 border-t border-[#F1F0EE] pt-2 mt-6">
-                    {/* <img
-                        src={activeTab.reviewerImage}
-                        alt={activeTab.reviewer}
-                        className="w-16 h-auto rounded-full object-cover pt-6"
-                    /> */}
-                    <div className="flex-1">
-                        {/* <p className="text-gray-800 font-semibold text-start">{activeTab.reviewer}</p>
-                        <p className="text-sm text-gray-500 text-start">
-                            {activeTab.role} @ {activeTab.company}
-                        </p> */}
-                        <p className="text-sm italic text-gray-600 mt-1 text-center mt-5">
-                            "{activeTab.review}"
-                        </p>
+                        {/* {activeTab.title} */}
+                        Gagnez du temps, <br /> multipliez vos ventes
+                    </h2>
+                    <div className="flex lg:justify-start md:justify-center sm:justify-center justify-center items-center">
+                        <button
+                            style={{
+                                background:
+                                    "linear-gradient(224.64deg, rgba(228, 150, 0, 0.8) 7.14%, #C88400 90.37%)",
+                                boxShadow: "0 8px 25px rgba(255, 215, 0, 0.3)", // blurry gold shadow
+                            }}
+                            className="lg:mt-10 md:mt-10 sm:mt-5 mt-0 cursor-pointer text-white lg:px-8 md:px-8 sm:px-5 px-1 py-3 font-semibold mb-12 rounded-lg lg:space-x-5 md:space-x-5 sm:space-x-3 space-x-1 hover:text-black"                   >
+                            Essai gratuit de 7 jours
+                        </button>
                     </div>
-                    {/* {activeTab.logo && (
-                            <img
-                                src={activeTab.logo}
-                                alt="logo"
-                                className="w-16 h-auto object-contain"
-                            />
-                        )} */}
+                </div>
+
+                {/* Right Side */}
+                <div className="flex-1 space-y-4 lg:-ml-5 md:-ml-5 sm:-ml-5 -ml-0">
+                    <ul className="space-y-4">
+                        {activeTab.checklist.map((item, idx) => (
+                            <li key={idx} className="flex items-center space-x-1">
+                                <img src={container} alt="" />
+                                <span className="text-[#4C4C4C] font-medium lg:text-[16px] md:text-[16px] sm:text-[16px] text-[15px] text-start">{item}</span>
+                            </li>
+                        ))}
+                    </ul>
+
+                    {/* Testimonial */}
+                    <div className="lg:flex md:flex sm:flex block justify-center items-start gap-3 border-t border-[#F1F0EE] pt-2 mt-6">
+                        <div className="flex-1">
+                            <p className="text-sm italic text-gray-600 mt-1 text-center mt-5">
+                                "{activeTab.review}"
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
         </div >
     );
 };

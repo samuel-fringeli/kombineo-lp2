@@ -1,10 +1,10 @@
 import Enter2 from '../assets/Vector2.svg'
-import right from '../assets/wave-right.svg'
-import left from '../assets/wave-left.svg'
 import klogo from '../assets/FooterLogo.svg'
 import linkedIn from '../assets/Lin.svg'
 import instagram from '../assets/instra.svg'
 import whatsapp from '../assets/image 67.svg'
+import desktopGif from '/Videos/MOCKUP_ORDI_1.gif'
+import mobileGif from '/Videos/MOCKUP_TEL_1.mov (1).gif'
 const Footer = () => {
   return (
     <div
@@ -46,23 +46,23 @@ const Footer = () => {
 
 
             {/* Connection Diagram */}
-            <div className="mt-8 ml-6 sm:mt-10 lg:-mt-16 overflow-hidden ">
+            {/* <div className="mt-8 ml-6 sm:mt-10 lg:-mt-16 overflow-hidden ">
               <div className="w-[200px] sm:w-[350px] md:w-[350px] lg:w-[350px]  m-auto relative ">
                 <div className="flex flex-col w-[200px] sm:w-[350px] md:w-[350px] lg:w-[350px]     py-30 max-md:py-6 sm:flex-row items-center justify-center gap-4 sm:gap-8 md:gap-16 lg:gap-30">
-                  {/* Connection Lines - Hidden on mobile, visible on sm+ */}
+
                   <div className="block max-md:hidden absolute  m-auto -mt-5  w-80   sm:block  inset-0  top-40 ">
                     <div className=" w-[300px] h-[2px] border-t-2 border-teal-700"></div>
-                    {/* lead but */}
+                    
                   </div>
                   <div className="bg-[#035E71] z-1 text-white px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-medium whitespace-nowrap ">
-                    {/* Vos leads entrants */}
+                    
                     100% Data capturés
                   </div>
-                  {/* exploties but */}
+                  
                   <div className="bg-[#035E71] z-1 text-white px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-medium whitespace-nowrap">
                     Leads 100% exploités
                   </div>
-                  {/* web left */}
+                  
                   <div className="absolute block  -left-110   -top-33 z-0  max-md:hidden">
                     <img
                       src={right}
@@ -70,7 +70,7 @@ const Footer = () => {
                       alt="jdfvjeswkfwebgvku"
                     />
                   </div>
-                  {/* web right */}
+                  
                   <div className="absolute block  -right-110   -top-33 z-0 max-md:hidden">
                     <img
                       src={left}
@@ -80,26 +80,37 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
+            </div> */}
+
+            <div className="relative w-full overflow-hidden rounded-2xl -mt-20">
+              {/* Desktop GIF */}
+              <img
+                src={desktopGif}
+                alt="Desktop preview"
+                className="hidden md:block w-full h-[80vh] object-cover z-50"
+              />
+
+              {/* Mobile GIF */}
+              <img
+                src={mobileGif}
+                alt="Mobile preview"
+                className="block md:hidden w-full h-[50vh] object-cover"
+              />
             </div>
+
           </div>
         </div>
       </div>
 
       {/* Divider */}
       <div className="flex justify-center py-6 sm:py-8  relative">
-        <div className="  flex items-center justify-center z-1 ml-13">
-          {/* <div className="w-6 h-6 sm:w-8 sm:h-8 bg-white rounded-full flex items-center justify-center ">
-            <span className="text-teal-600 font-bold text-sm sm:text-lg">
-              K
-            </span>
-          </div> */}
+        <div className="  flex items-center justify-center z-1 ml-7">
           <div className="flex flex-col items-center">
             <img
               src={klogo}
               alt=""
               className="max-[640px]:w-30 max-[640px]:mt-3"
             />
-            {/* <div className="w-[50%] m-auto h-[2px] bg-white -mt-20"></div> */}
           </div>
         </div>
         {/* <div
@@ -134,7 +145,7 @@ const Footer = () => {
               <h3 className="font-inter font-semibold text-[18.75px] leading-[30px] tracking-normal text-left align-middle">
                 <br />
               </h3>
-              <div className="font-inter font-medium text-[14.73px] leading-[28px] align-middle text-[#FFFFFF]  cursor-pointer pt-2">
+              <div className="font-inter font-medium text-[14.73px] leading-[30px] align-middle text-[#FFFFFF]  cursor-pointer pt-2">
                 <p>1,000+ sociétés utilisent</p>
                 <p>Kombineo pour optimiser</p>
                 <p>100% de leurs leads</p>
@@ -142,7 +153,7 @@ const Footer = () => {
             </div>
 
             {/*  Commencez */}
-            <div className="space-y-3 sm:space-y-4">
+            <div className="space-y-3 sm:space-y-5.5">
               <h3 className="font-inter font-semibold text-[18.75px] leading-[30px] tracking-normal text-left align-middle">
                 Commencez
               </h3>
@@ -153,7 +164,7 @@ const Footer = () => {
               </div>
             </div>
             {/* Kombineo CRM Column */}
-            <div className="space-y-3 sm:space-y-4">
+            <div className="space-y-3 sm:space-y-5.5">
               <h3 className="font-inter font-semibold text-[18.75px] leading-[30px] tracking-normal text-left align-middle">
                 Kombineo CRM
               </h3>
@@ -166,7 +177,7 @@ const Footer = () => {
             </div>
 
             {/* Contact Column */}
-            <div className="space-y-3 sm:space-y-4">
+            <div className="space-y-3 sm:space-y-5.5">
               <h3 className="font-inter font-semibold text-[18.75px] leading-[30px] tracking-normal text-left align-middle">
                 Contact
               </h3>
@@ -181,7 +192,7 @@ const Footer = () => {
             </div>
 
             {/* Social Column */}
-            <div className="space-y-3 sm:space-y-4">
+            <div className="space-y-3 sm:space-y-5.5">
               <h3 className="font-inter font-semibold text-[18.75px] leading-[30px] tracking-normal text-left align-middle">
                 Social
               </h3>

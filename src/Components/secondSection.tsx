@@ -1,7 +1,4 @@
 import TestimonialCard from "./TestimonialCard";
-// // import ProfileImage from "../assets/image 56.svg";
-// import firstCardLogo from "../assets/image 62.svg";
-// import secondCardLogo from "../assets/image 63.svg";
 import { motion, AnimatePresence } from "framer-motion";
 import Tabs from "./tabs";
 import ticket from "../assets/whitebgflame.svg";
@@ -11,7 +8,6 @@ import image from "../assets/ArrowGradient.svg";
 import { useEffect, useRef, useState } from "react";
 import Enter2 from "../assets/Vector2.svg";
 import app from "../assets/apps_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24 1.svg";
-// import pp from "../assets/image 65.svg";
 import sideImage from "../assets/KPI.png";
 import group from "../assets/FirstImage.svg";
 import bar from "../assets/Frame 2147224427.svg";
@@ -32,7 +28,7 @@ import FellowImage from '../assets/Follow upp.png'
 import CommImage from '../assets/commissions.png'
 import LogoCard1 from '../assets/1-tibtalks.png'
 import LogoCard2 from '../assets/2-daronsdubiz.png'
-import LogoCard3 from '../assets/3-vortex.png'
+import LogoCard3 from '../assets/Vortex1.jpg'
 import LogoCard4 from '../assets/4-viralite_.png'
 import LogoCard5 from '../assets/5-maxen.png'
 import LogoCard6 from '../assets/6-antoinereydel.png'
@@ -253,18 +249,18 @@ const Cards = () => {
       role: "CEA",
       company: "Vortex",
       tag: "Challenge",
-      bgColor: "bg-gradient-to-r from-[#5DA9B9] via-[#035E71] to-[#035E71]",
-      highlightColor: "#ffffff",
-      titleColor: "#B9F3FFCC",
-      reviewColor: "#ffffff",
-      nameColor: "#ffffff",
-      roleColor: "#FFFFFF80",
-      tagTextColor: "#111111",
+      bgColor: "#FFFFFF",
+      highlightColor: "#035E71",
+      titleColor: "#0000004D",
+      reviewColor: "#000000",
+      nameColor: "#035E71",
+      roleColor: "#247A8C80",
+      tagTextColor: "#ffffff",
       tagBgColor:
-        "#ffffff",
-      companyColor: "#FFFFFFE5",
+        "bg-[linear-gradient(98.23deg,#035E71_-6.67%,#5DA9B9_45.08%,#035E71_97.28%)]",
+      companyColor: "#035E71E5",
       title2: LogoCard3,
-      ticket: ticket,
+      ticket: secondticket,
     },
     {
       image: fourth,
@@ -411,7 +407,7 @@ const Cards = () => {
                 <motion.div
                   className="flex space-x-10 lg:w-[300%] md:w-[600%] sm:w-[500%] w-[600%] ml-14"
                   variants={{}}
-                  animate={{ x: ["0%", "-50%"] }}
+                  animate={{ x: ["0%", "-29%"] }}
                   transition={{
                     duration: 25,
                     ease: "linear",
@@ -433,7 +429,7 @@ const Cards = () => {
                 <motion.div
                   className="flex space-x-10 lg:w-[300%] md:w-[300%] sm:w-[500%] w-[600%] mr-14"
                   variants={{}}
-                  animate={{ x: ["-32%", "0%"] }}
+                  animate={{ x: ["-29%", "0%"] }}
                   transition={{
                     duration: 25,
                     ease: "linear",
@@ -462,7 +458,7 @@ const Cards = () => {
               </span>{" "}
               <span className="text-[#000000]">pour les </span> <br />
               <span className="bg-gradient-to-r from-[#035E71] via-[#5DA9B9] to-[#035E71] bg-clip-text text-transparent">
-                Entrepreneurs Ambitieux
+                Entrepreneurs digitaux
               </span>
             </h1>
 
@@ -536,16 +532,8 @@ const Cards = () => {
 
         {/* Pourquoi nos clients nous ont choisis  */}
         <div ref={sectionRef} className="mt-16">
-          <h1 className="mb-3 text-xl font-semibold text-center md:text-2xl lg:text-3xl font-geist">
-            {/* <span className="bg-[linear-gradient(92.36deg,#000000_1.98%,#7F7F7F_37.95%,#000000_62.94%,#6E6E6E_72.43%,#000000_92.41%,#999999_105.9%)] bg-clip-text text-transparent">
-                Pourquoi{" "}
-                <span className="bg-[linear-gradient(92.36deg,#000000_1.98%,#7F7F7F_37.95%,#000000_62.94%,#6E6E6E_72.43%,#000000_92.41%,#999999_105.9%)] bg-clip-text text-transparent">
-                  nos
-                </span>{" "}
-                clients
-              </span>
-              <br /> */}
-            <span>4 leviers puissants derrière le scale de nos clients</span>
+          <h1 className="mb-3 text-xl font-semibold text-center md:text-3xl lg:text-5xl font-geist" >
+            4 leviers puissants derrière <br /> le scale de nos clients
           </h1>
           <p className="text-center text-[#757575]">
             Gagnez en clarté, efficacité et en chiffre d’affaires dès la prise en main
@@ -622,7 +610,7 @@ const Cards = () => {
             >
               <div
                 ref={scrollContentRef}
-                className="w-full lg:max-w-md md:max-w-lg sm:max-w-lg lg:space-y-5 md:space-y-5 sm:space-y-3 space-y-3" 
+                className="w-full lg:max-w-md md:max-w-lg sm:max-w-lg lg:space-y-5 md:space-y-5 sm:space-y-3 space-y-1" 
                 style={{ transform: "translateY(0)" }}
               >
                 {/* All features stacked vertically for sliding animation */}
@@ -673,7 +661,7 @@ const Cards = () => {
             {/* RIGHT IMAGE SECTION - Absolute positioned within container */}
            
            <div
-            className="absolute right-0 top-10 hidden lg:block z-20 w-[35%]"
+            className="absolute right-0 top-10 hidden lg:block z-20 w-[40%]"
             aria-hidden="true"
           >
             <AnimatePresence mode="wait">

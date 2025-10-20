@@ -1,38 +1,38 @@
 import React from "react";
-import ProfileImage from '../assets/image 56.svg'
+import { useBillingStore } from "../store";
+// import ProfileImage from '../assets/image 56.svg'
 
 const featuresScale: string[] = [
-    "Task Management",
-    "AI Summary",
-    "Progress Tracking",
-    "Smart Labels",
+    "Gestion des tâches",
+    "Résumé de l'IA",
+    "Suivi des progrès",
+    "Étiquettes intelligentes",
 ];
 
 const featuresPower: string[] = [
-    "Everything in Basic",
-    "Team Collaboration",
-    "Bulk Actions",
-    "Query Translation",
-    "Advanced Reporting",
-    "Customizable Dashboards",
-    "Priority Support",
+    "Tout en Basic",
+    "Collaboration en équipe",
+    "Actions groupées",
+    "Traduction de requête",
+    "Tableaux de bord personnalisables",
+    "Assistance prioritaire",
 ];
 
-const EnterpriseBadge: React.FC = () => (
-    <div className="flex items-center gap-2 text-sm text-slate-600">
-        <div className="relative w-9 h-9">
-            <img
-                src={ProfileImage}
-                alt="Profile"
-                className="w-full h-full rounded-full object-cover shadow-sm "
-            />
-        </div>
-        <div className="leading-tight">
-            <div className="font-medium text-[#035E71]">Henri Darnet</div>
-            <div className="text-xs text-[#247A8C80]">CEO à <span className="text-[#035E71]">Mindeo</span> </div>
-        </div>
-    </div>
-);
+// const EnterpriseBadge: React.FC = () => (
+//     <div className="flex items-center gap-2 text-sm text-slate-600">
+//         <div className="relative w-9 h-9">
+//             <img
+//                 src={ProfileImage}
+//                 alt="Profile"
+//                 className="w-full h-full rounded-full object-cover shadow-sm "
+//             />
+//         </div>
+//         <div className="leading-tight">
+//             <div className="font-medium text-[#035E71]">Henri Darnet</div>
+//             <div className="text-xs text-[#247A8C80]">CEO à <span className="text-[#035E71]">Mindeo</span> </div>
+//         </div>
+//     </div>
+// );
 
 const Check: React.FC = () => (
     <svg aria-hidden={true} className="w-4 h-4 flex-none" viewBox="0 0 20 20" fill="currentColor">
@@ -88,11 +88,12 @@ interface FeatureProps {
 const Feature: React.FC<FeatureProps> = ({ children }) => (
     <li className="flex items-start gap-1.5">
         <span className="mt-1 text-emerald-500"><Check /></span>
-        <span className="text-sm text-slate-700">{children}</span>
+        <span className="text-sm text-slate-700 text-start">{children}</span>
     </li>
 );
 
 const PricingSection: React.FC = () => {
+    const { isMonthly } = useBillingStore();
     return (
         <section className="relative py-12 sm:py-16">
             <Background />
@@ -102,9 +103,23 @@ const PricingSection: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
                     {/* SCALE */}
                     <Card className="p-6 sm:p-5 flex flex-col">
-                        <div className="text-sm font-semibold tracking-wide text-[#1E1E1E] text-start">SCALE</div>
+                        <div className="text-sm font-semibold tracking-wide text-[#1E1E1E] text-start">ÉCHELLE</div>
                         <p className="text-sm text-[#4C4C4C] text-start">Parfait pour les petites équipes et les startups.</p>
-                        <Price amount={29} />
+                          {isMonthly ? <>
+                            <div className="mt-2">
+                                <div className="flex items-end gap-1">
+                                    <span className="text-4xl font-semibold tracking-tight text-[€#111111] ">€39</span>
+                                    <span className=" text-[#4C4C4C] text-sm -pt-10">par mois</span>
+                                </div>
+                            </div>
+                        </> : <>
+                             <div className="mt-2">
+                                <div className="flex items-end gap-1">
+                                    <span className="text-4xl font-semibold tracking-tight text-[€#111111] ">€29</span>
+                                    <span className=" text-[#4C4C4C] text-sm -pt-10">facturé annuellement</span>
+                                </div>
+                            </div>
+                        </>}
                         <button
                             className="mt-8 inline-flex justify-center rounded-lg text-white px-4 py-2.5 text-sm font-medium shadow focus:outline-none focus:ring-2 focus:ring-slate-400/40 hover:text-black"
                             style={{
@@ -127,9 +142,23 @@ const PricingSection: React.FC = () => {
                             </div>
                         </div>
 
-                        <div className="text-sm font-semibold tracking-wide text-[#000000] text-start">POWER</div>
+                        <div className="text-sm font-semibold tracking-wide text-[#000000] text-start">POUVOIR</div>
                         <p className="mt-1 text-sm text-start text-[#000000]">Idéal pour les équipes et les projets en pleine croissance.</p>
-                        <Price amount={69} />
+                        {isMonthly ? <>
+                            <div className="mt-2">
+                                <div className="flex items-end gap-1">
+                                    <span className="text-4xl font-semibold tracking-tight text-[€#111111] ">€69</span>
+                                    <span className=" text-[#4C4C4C] text-sm -pt-10">par mois</span>
+                                </div>
+                            </div>
+                        </> : <>
+                             <div className="mt-2">
+                                <div className="flex items-end gap-1">
+                                    <span className="text-4xl font-semibold tracking-tight text-[€#111111] ">€49</span>
+                                    <span className=" text-[#4C4C4C] text-sm -pt-10">facturé annuellement</span>
+                                </div>
+                            </div>
+                        </>}
 
                         <button style={{ background: "radial-gradient(circle, #FFCF72, #E49600)", }} className="mt-8 inline-flex justify-center rounded-lg text-white px-4 py-2.5 text-sm font-semibold shadow hover:text-black focus:outline-none focus:ring-2 focus:ring-amber-400/50">
                             Start 7-day free trial
@@ -146,22 +175,22 @@ const PricingSection: React.FC = () => {
 
                     {/* ENTERPRISE */}
                     <Card className="p-6 sm:p-5 flex flex-col">
-                        <div className="text-sm font-semibold tracking-wide text-[#1E1E1E] text-start">Enterprise</div>
+                        <div className="text-sm font-semibold tracking-wide text-[#1E1E1E] text-start">Entreprise</div>
                         <p className="mt-1 text-sm text-[#4C4C4C] text-start">Conçu pour répondre aux besoins des grandes organisations.</p>
-                        <Price amount={129} />
+                        {/* <Price amount={129} /> */}
 
-                        <div className="mt-10 text-start">
+                        {/* <div className="mt-10 text-start">
                             <h3 className="text-[#035E71]">XXeuros de générés </h3>
                             <p className="text-[12px] italic text-[#000000]">“Un plaisir de travailler avec Tom et des résultats exceptionnels pour une premiere collaboration.”</p>
                         </div>
 
                         <div className="mt-6">
                             <EnterpriseBadge />
-                        </div>
+                        </div> */}
 
                         <button style={{
                             background: "linear-gradient(90deg, #035E71 0%, #5DA9B9 28.37%, #035E71 76.92%)",
-                        }} className="mt-40 inline-flex justify-center rounded-lg  text-white px-4 py-2.5 text-sm hover:text-black font-medium shadow hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-400/60">
+                        }} className="md:mt-72 mt-28 inline-flex justify-center rounded-lg  text-white px-4 py-2.5 text-sm hover:text-black font-medium shadow hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-400/60">
                             Booker une démo
                         </button>
                     </Card>

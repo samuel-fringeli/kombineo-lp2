@@ -5,10 +5,12 @@ import Navbar from './navBar'
 import ticket from '../assets/Vector.svg'
 // import bgImage from "../assets/bg.svg";
 import bgImage from "../assets/NewBg.svg";
-import { useState } from 'react';
+// import { useState } from 'react';
 import Plans from '../Components/plans'
+import { useBillingStore } from "../store";
 const Hero = () => {
-    const [isMonthly, setIsMonthly] = useState(true);
+    const { isMonthly, toggleBilling } = useBillingStore();
+//  const [isMonthly, setIsMonthly] = useState(true);
     return (
         <div className='w-full' style={{
             backgroundImage: `url(${bgImage})`,
@@ -69,7 +71,7 @@ const Hero = () => {
                             {/* Toggle Switch */}
                             <div
                                 className="relative w-12 h-6 rounded-full cursor-pointer bg-gradient-to-r from-[#035E71] via-[#5DA9B9] to-[#035E71]"
-                                onClick={() => setIsMonthly(!isMonthly)}
+                                onClick={toggleBilling}
                             >
                                 <div
                                     className={`w-5 h-5 bg-white rounded-full transform transition-transform duration-300 absolute top-0.5 ${isMonthly ? "left-1" : "left-6"
@@ -101,7 +103,7 @@ const Hero = () => {
                                     background: "linear-gradient(to right, #035E71, #5DA9B9, #035E71)",
                                 }}
                             >
-                                Jusqu’à -51%
+                                Jusqu’à -29%
                             </button>
                         </div>
                     </div>
