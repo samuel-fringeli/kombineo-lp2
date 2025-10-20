@@ -1,6 +1,5 @@
 import React from "react";
 import { useBillingStore } from "../store";
-// import ProfileImage from '../assets/image 56.svg'
 
 const featuresScale: string[] = [
     "Gestion des tâches",
@@ -64,23 +63,23 @@ const Card: React.FC<CardProps> = ({ children, className = "" }) => (
     <div className={`rounded-2xl bg-white/90 backdrop-blur-sm border border-slate-200 shadow-sm ${className}`}>{children}</div>
 );
 
-interface PriceProps {
-    amount: number;
-    per?: string;
-    after?: string;
-}
-const Price: React.FC<PriceProps> = ({ amount, per = "per month", after = "facturé annuellement" }) => (
-    <div className="mt-2">
-        <div className="flex items-end gap-1">
-            <span className="text-4xl font-semibold tracking-tight text-[€#111111]">€{amount}</span>
-            <div className="text-start">
-                <span className="mb-1 text-[#4C4C4C] text-sm">{per}</span>
-                <div className="text-[#4C4C4C] text-xs">{after}</div>
-            </div>
+// interface PriceProps {
+//     amount: number;
+//     per?: string;
+//     after?: string;
+// }
+// const Price: React.FC<PriceProps> = ({ amount, per = "per month", after = "facturé annuellement" }) => (
+//     <div className="mt-2">
+//         <div className="flex items-end gap-1">
+//             <span className="text-4xl font-semibold tracking-tight text-[€#111111]">€{amount}</span>
+//             <div className="text-start">
+//                 <span className="mb-1 text-[#4C4C4C] text-sm">{per}</span>
+//                 <div className="text-[#4C4C4C] text-xs">{after}</div>
+//             </div>
 
-        </div>
-    </div>
-);
+//         </div>
+//     </div>
+// );
 
 interface FeatureProps {
     children: React.ReactNode;
