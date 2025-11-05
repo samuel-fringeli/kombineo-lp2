@@ -1,4 +1,5 @@
 import React from "react";
+import { handleButtonNavigation } from "../utils/tracking";
 import { useBillingStore } from "../store";
 
 const featuresScale: string[] = [
@@ -120,10 +121,13 @@ const PricingSection: React.FC = () => {
                             </div>
                         </>}
                         <button
+                            onClick={() => handleButtonNavigation('https://app.kombineo.com/signup?plan=scale', 'Pricing - Get Started (Scale)', 'cta')}
                             className="mt-8 inline-flex justify-center rounded-lg text-white px-4 py-2.5 text-sm font-medium shadow focus:outline-none focus:ring-2 focus:ring-slate-400/40 hover:text-black"
                             style={{
                                 background: "linear-gradient(90deg, #035E71 0%, #5DA9B9 28.37%, #035E71 76.92%)",
                             }}
+                            data-button-type="cta"
+                            data-tracking-label="Pricing - Get Started (Scale)"
                         >
                             Get Started
                         </button>
@@ -159,7 +163,13 @@ const PricingSection: React.FC = () => {
                             </div>
                         </>}
 
-                        <button style={{ background: "radial-gradient(circle, #FFCF72, #E49600)", }} className="mt-8 inline-flex justify-center rounded-lg text-white px-4 py-2.5 text-sm font-semibold shadow hover:text-black focus:outline-none focus:ring-2 focus:ring-amber-400/50">
+                        <button 
+                            onClick={() => handleButtonNavigation('https://app.kombineo.com/trial?plan=power', 'Pricing - Start 7-day free trial (Power)', 'trial')}
+                            style={{ background: "radial-gradient(circle, #FFCF72, #E49600)", }} 
+                            className="mt-8 inline-flex justify-center rounded-lg text-white px-4 py-2.5 text-sm font-semibold shadow hover:text-black focus:outline-none focus:ring-2 focus:ring-amber-400/50"
+                            data-button-type="trial"
+                            data-tracking-label="Pricing - Start 7-day free trial (Power)"
+                        >
                             Start 7-day free trial
                         </button>
 
@@ -187,9 +197,15 @@ const PricingSection: React.FC = () => {
                             <EnterpriseBadge />
                         </div> */}
 
-                        <button style={{
+                        <button 
+                            onClick={() => handleButtonNavigation('https://app.kombineo.com/enterprise-demo', 'Pricing - Booker une démo (Enterprise)', 'demo')}
+                            style={{
                             background: "linear-gradient(90deg, #035E71 0%, #5DA9B9 28.37%, #035E71 76.92%)",
-                        }} className="md:mt-72 mt-28 inline-flex justify-center rounded-lg  text-white px-4 py-2.5 text-sm hover:text-black font-medium shadow hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-400/60">
+                        }} 
+                            className="md:mt-72 mt-28 inline-flex justify-center rounded-lg  text-white px-4 py-2.5 text-sm hover:text-black font-medium shadow hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-400/60"
+                            data-button-type="demo"
+                            data-tracking-label="Pricing - Booker une démo (Enterprise)"
+                        >
                             Booker une démo
                         </button>
                     </Card>

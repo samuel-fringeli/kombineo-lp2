@@ -529,13 +529,12 @@ const Cards = () => {
             en main
           </p>
           <div id="features" className="mt-10 flex items-center justify-center">
-            {/* <button className="mb-12 flex cursor-pointer items-center justify-center space-x-1 rounded-lg bg-[linear-gradient(106.57deg,rgba(228,150,0,0.8)_14.6%,#CA8500_111.87%)] px-1 py-3 font-semibold text-white shadow-md shadow-amber-300 sm:space-x-3 sm:px-5 md:space-x-5 md:px-8 lg:space-x-5 lg:px-8">
-              <span className="text-[14px] text-white">
-                Essayez gratuitement
-              </span>
-              <img src={Enter2} alt="" className="h-[15px] w-[15px]" />
-            </button> */}
-            <SharedButton label="Essayez gratuitement" />
+            <SharedButton 
+              label="Essayez gratuitement" 
+              href="https://app.kombineo.com/signup"
+              buttonType="trial"
+              trackingLabel="Features Section - Essayez gratuitement"
+            />
           </div>
         </div>
       </div>

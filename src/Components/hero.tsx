@@ -1,13 +1,13 @@
 import ticket from "../assets/Vector.svg";
 import path from "../assets/path27.svg";
 import Enter from "../assets/svg10610178807.svg";
-import Enter2 from "../assets/Vector2.svg";
 import Green from "../assets/Button-tiny.svg";
 import image from "../assets/G2.png";
 import star from "../assets/Star.svg";
 import Navbar from "./navBar";
 import bgImage from "../assets/NewBg.svg";
 import SharedButton from "../shared-components/SharedButton";
+import { handleButtonNavigation } from "../utils/tracking";
 const Hero = () => {
   return (
     <div
@@ -71,9 +71,23 @@ const Hero = () => {
             <SharedButton
               label="Essayez gratuitement"
               gradientDirection="btt"
+              href="https://app.kombineo.com/signup"
+              buttonType="trial"
+              trackingLabel="Hero CTA - Essayez gratuitement"
             />
 
-            <button className="mb-12 flex cursor-pointer items-center justify-center space-x-0 rounded-lg bg-[#FFFFFF] px-1 py-3 font-semibold shadow-md hover:text-white sm:space-x-2 sm:px-5 md:space-x-2 md:px-8 lg:space-x-2 lg:px-8">
+            <button
+              onClick={() =>
+                handleButtonNavigation(
+                  "https://app.kombineo.com/demo",
+                  "Hero - Voir démo",
+                  "demo"
+                )
+              }
+              className="mb-12 flex cursor-pointer items-center justify-center space-x-0 rounded-lg bg-[#FFFFFF] px-1 py-3 font-semibold shadow-md hover:text-white sm:space-x-2 sm:px-5 md:space-x-2 md:px-8 lg:space-x-2 lg:px-8"
+              data-button-type="demo"
+              data-tracking-label="Hero - Voir démo"
+            >
               <span className="bg-gradient-to-r from-[#035E71] via-[#5DA9B9] to-[#035E71] bg-clip-text text-[14px] text-transparent hover:text-black">
                 Voir démo
               </span>

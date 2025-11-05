@@ -177,6 +177,9 @@ const TabCard: React.FC = () => {
               className="mt-12"
               label="Essai gratuit de 7 jours"
               gradientDirection="rtl"
+              href="https://app.kombineo.com/trial"
+              buttonType="trial"
+              trackingLabel="Tabs Section - Essai gratuit de 7 jours"
             />
           </div>
         </div>

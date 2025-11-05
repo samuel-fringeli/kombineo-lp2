@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import logo from '../assets/Auto Layout Horizontal.svg'
+import { handleButtonNavigation } from "../utils/tracking";
 import { Link } from "react-router-dom";
 export default function ResponsiveNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -98,10 +99,13 @@ export default function ResponsiveNavbar() {
 
             {/* Desktop CTA Button */}
             <button
+              onClick={() => handleButtonNavigation('https://app.kombineo.com/demo', 'Navbar - Demander une démo', 'demo')}
               className="hidden md:block text-white px-6 py-2 rounded-lg font-medium shadow-md transition-colors cursor-pointer"
               style={{
                 background: "linear-gradient(to right, #035E71, #5DA9B9, #035E71)",
               }}
+              data-button-type="demo"
+              data-tracking-label="Navbar - Demander une démo"
             >
               Demander une démo
             </button>
@@ -158,7 +162,12 @@ export default function ResponsiveNavbar() {
                     }}
                     className="px-4 pt-2"
                   >
-                    <button className="w-full text-white bg-[#035E71] hover:bg-[#024A5A] px-6 py-3 rounded-lg font-medium shadow-md transition-colors cursor-pointer">
+                    <button 
+                      onClick={() => handleButtonNavigation('https://app.kombineo.com/demo', 'Navbar Mobile - Demander une démo', 'demo')}
+                      className="w-full text-white bg-[#035E71] hover:bg-[#024A5A] px-6 py-3 rounded-lg font-medium shadow-md transition-colors cursor-pointer"
+                      data-button-type="demo"
+                      data-tracking-label="Navbar Mobile - Demander une démo"
+                    >
                       Demander une démo
                     </button>
                   </motion.div>

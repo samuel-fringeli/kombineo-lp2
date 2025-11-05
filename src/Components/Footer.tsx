@@ -96,7 +96,7 @@ const Footer: React.FC = () => {
   return (
     <div className="min-h-screen" style={{ background: gradientBg }}>
       {/* Hero Section */}
-      <section className="mx-auto mt-20 px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+      <section className="mx-auto mt-20 px-4 py-12 sm:py-16 lg:px-8">
         <div className="mx-auto w-[95%] space-y-8 rounded-2xl bg-white p-6 text-center shadow-xl sm:rounded-3xl sm:p-8 lg:p-12">
           <h1 className="font-Geist text-[35px] font-semibold leading-tight text-gray-800 sm:text-[45px] lg:text-[70px]">
             Vous méritez mieux qu’un <br />
@@ -152,7 +152,7 @@ const Footer: React.FC = () => {
 
       {/* Footer Section */}
       <footer className="pb-8 pt-4 font-inter text-white">
-        <div className="lg:px-18 container mx-auto px-12 sm:px-4">
+        <div className="container mx-auto px-12">
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5">
             {footerLinks.map(({ title, links }, idx) => (
               <div
