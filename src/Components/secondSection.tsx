@@ -257,7 +257,7 @@ const Cards = () => {
             <h1 className="mb-6 text-center font-geist text-xl font-semibold md:text-3xl lg:text-5xl">
               <span className="bg-gradient-to-r from-[#035E71] via-[#5DA9B9] to-[#035E71] bg-clip-text text-transparent">
                 24M€
-              </span>{" "}
+              </span>
               <span></span>
               <span>
                 déjà optimisés pour des <br /> entreprises comme la vôtre
