@@ -135,14 +135,14 @@ const FeatureDisplay = () => {
   }, [isMobile]);
 
   return (
-    <div ref={featureSectionRef} className="relative pt-20">
+    <div ref={featureSectionRef} className="relative pt-24">
       <div
         ref={pinWrapperRef}
         className="m-auto w-[95%] overflow-hidden rounded-2xl border-[2px] border-white bg-gradient-to-b from-[#E0F5FF] to-[#F4F7F8] font-inter"
       >
         {/* --- Desktop Tabs --- */}
         <div
-          className={`absolute left-10 top-10 z-20 lg:w-40 xl:64  ${
+          className={`absolute left-8 top-10 z-20 lg:w-40 xl:w-64  ${
             isMobile ? "hidden" : "block"
           }`}
         >
@@ -167,14 +167,14 @@ const FeatureDisplay = () => {
 
         {/* --- Scrollable Feature Content --- */}
         <div
-          className={`relative z-10 mb-10 w-full overflow-hidden pt-8 lg:ml-72`}
+          className={`relative z-10 w-full overflow-hidden p-8 lg:pl-56`}
           style={{
             height: isMobile ? "auto" : "75vh",
           }}
         >
           <div
             ref={scrollContentRef}
-            className="h-full w-full max-w-lg lg:max-w-md"
+            className="h-full w-full lg:max-w-xs xl:max-w-md"
           >
             {features.map((f, i) => (
               <div
@@ -199,7 +199,7 @@ const FeatureDisplay = () => {
                   <img
                     src={f.img2}
                     alt={f.title}
-                    className="w-full rounded-xl"
+                    className="w-full rounded-2xl shadow-xl"
                   />
                 </div>
               </div>
@@ -208,7 +208,7 @@ const FeatureDisplay = () => {
         </div>
 
         {/* --- Desktop Image --- */}
-        <div className="absolute right-0 top-10 hidden w-[40%] lg:block">
+        <div className="absolute right-8 top-8 hidden w-[40%] lg:block">
           <AnimatePresence mode="wait">
             <motion.img
               key={activeIndex}

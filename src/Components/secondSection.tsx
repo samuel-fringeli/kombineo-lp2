@@ -254,11 +254,10 @@ const Cards = () => {
       <div className="-mt-40 w-full bg-[#F7FEFF] pb-40">
         <div className="mb-20 text-center">
           <div className="mx-auto max-w-7xl px-4 pb-24 pt-40 lg:px-6">
-            <h1 className="mb-6 text-center font-geist text-xl font-semibold md:text-3xl lg:text-5xl">
+            <h1 className="mb-6 space-x-4 text-center font-geist text-xl font-semibold md:text-3xl lg:text-5xl">
               <span className="bg-gradient-to-r from-[#035E71] via-[#5DA9B9] to-[#035E71] bg-clip-text text-transparent">
                 24M€
               </span>
-              <span></span>
               <span>
                 déjà optimisés pour des <br /> entreprises comme la vôtre
               </span>

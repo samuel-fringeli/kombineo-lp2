@@ -8,6 +8,7 @@ import Navbar from "./navBar";
 import bgImage from "../assets/NewBg.svg";
 import SharedButton from "../shared-components/SharedButton";
 import { handleButtonNavigation } from "../utils/tracking";
+import video from "../../public/Videos/TOM_VSL_V5.mp4";
 const Hero = () => {
   return (
     <div
@@ -120,7 +121,13 @@ const Hero = () => {
             {/* <img src={star} alt="" /> */}
           </div>
 
-          <div className="relative z-0 m-auto mt-7 h-[500px] w-[100%] rounded-xl bg-[#D9D9D9]"></div>
+          {/* <div className="relative z-0 m-auto mt-7 h-[500px] w-[100%] rounded-xl bg-[#D9D9D9]"></div> */}
+          <video
+            className="mx-auto my-8 rounded-2xl"
+            src={video}
+            autoPlay
+            loop
+          />
         </div>
       </div>
     </div>
