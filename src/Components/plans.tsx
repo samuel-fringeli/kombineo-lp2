@@ -10,7 +10,7 @@ const featuresScale: string[] = [
 ];
 
 const featuresPower: string[] = [
-    "Tout en Basic",
+    "Tout de scale",
     "Collaboration en équipe",
     "Actions groupées",
     "Traduction de requête",
@@ -103,7 +103,7 @@ const PricingSection: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
                     {/* SCALE */}
                     <Card className="p-6 sm:p-5 flex flex-col">
-                        <div className="text-sm font-semibold tracking-wide text-[#1E1E1E] text-start">ÉCHELLE</div>
+                        <div className="text-sm font-semibold tracking-wide text-[#1E1E1E] text-start">SCALE</div>
                         <p className="text-sm text-[#4C4C4C] text-start">Parfait pour les petites équipes et les startups.</p>
                           {isMonthly ? <>
                             <div className="mt-2">
@@ -129,7 +129,7 @@ const PricingSection: React.FC = () => {
                             data-button-type="cta"
                             data-tracking-label="Pricing - Get Started (Scale)"
                         >
-                            Get Started
+                            Démarrer un essai gratuit de 7 jours
                         </button>
                         <ul className="mt-6 space-y-3">
                             {featuresScale.map((f) => (
@@ -145,7 +145,7 @@ const PricingSection: React.FC = () => {
                             </div>
                         </div>
 
-                        <div className="text-sm font-semibold tracking-wide text-[#000000] text-start">POUVOIR</div>
+                        <div className="text-sm font-semibold tracking-wide text-[#000000] text-start">Power</div>
                         <p className="mt-1 text-sm text-start text-[#000000]">Idéal pour les équipes et les projets en pleine croissance.</p>
                         {isMonthly ? <>
                             <div className="mt-2">
@@ -163,14 +163,14 @@ const PricingSection: React.FC = () => {
                             </div>
                         </>}
 
-                        <button 
-                            onClick={() => handleButtonNavigation('https://app.kombineo.com/trial?plan=power', 'Pricing - Start 7-day free trial (Power)', 'trial')}
-                            style={{ background: "radial-gradient(circle, #FFCF72, #E49600)", }} 
+                        <button
+                            onClick={() => handleButtonNavigation('https://app.kombineo.com/onboarding', 'Pricing - Start 7-day free trial (Power)', 'trial')}
+                            style={{ background: "radial-gradient(circle, #FFCF72, #E49600)", }}
                             className="mt-8 inline-flex justify-center rounded-lg text-white px-4 py-2.5 text-sm font-semibold shadow hover:text-black focus:outline-none focus:ring-2 focus:ring-amber-400/50"
                             data-button-type="trial"
                             data-tracking-label="Pricing - Start 7-day free trial (Power)"
                         >
-                            Start 7-day free trial
+                            Démarrer un essai gratuit de 7 jours
                         </button>
 
                         <ul className="mt-6 space-y-3">
@@ -197,11 +197,11 @@ const PricingSection: React.FC = () => {
                             <EnterpriseBadge />
                         </div> */}
 
-                        <button 
+                        <button
                             onClick={() => handleButtonNavigation('https://app.kombineo.com/enterprise-demo', 'Pricing - Booker une démo (Enterprise)', 'demo')}
                             style={{
                             background: "linear-gradient(90deg, #035E71 0%, #5DA9B9 28.37%, #035E71 76.92%)",
-                        }} 
+                        }}
                             className="md:mt-72 mt-28 inline-flex justify-center rounded-lg  text-white px-4 py-2.5 text-sm hover:text-black font-medium shadow hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-400/60"
                             data-button-type="demo"
                             data-tracking-label="Pricing - Booker une démo (Enterprise)"

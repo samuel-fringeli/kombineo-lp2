@@ -211,10 +211,10 @@ const Footer: React.FC = () => {
               © 2025 Kombineo. All rights reserved.
             </p>
 
-            <div className="flex items-center gap-2 rounded-full bg-[#042E49] px-3 py-1 text-xs">
+            {/*<div className="flex items-center gap-2 rounded-full bg-[#042E49] px-3 py-1 text-xs">
               <span className="h-2 w-2 rounded-full bg-green-400"></span>
               All Systems Operational
-            </div>
+            </div>*/}
 
             <div className="flex gap-4 text-[12px] text-[#C2C2C2]">
               <span className="cursor-pointer hover:text-white">
