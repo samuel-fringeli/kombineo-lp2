@@ -4,8 +4,10 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "../assets/Auto Layout Horizontal.svg";
 import { handleButtonNavigation } from "../utils/tracking";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 export default function ResponsiveNavbar() {
+  const { pathname } = useLocation();
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -19,9 +21,13 @@ export default function ResponsiveNavbar() {
   ];
 
   const scrollToFeatures = () => {
-    const headingElement = document.getElementById("features");
-    if (headingElement) {
-      headingElement.scrollIntoView({ behavior: "smooth" });
+    if (pathname.includes("pricing")) {
+      navigate("/", { state: { scrollToFeatures: true } });
+    } else {
+      const el = document.getElementById("features");
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
     }
   };
 
@@ -114,7 +120,7 @@ export default function ResponsiveNavbar() {
                   "demo"
                 )
               }
-              className="hidden cursor-pointer rounded-lg px-6 py-2 font-medium text-white shadow-md transition-colors md:block"
+              className="relative hidden cursor-pointer rounded-lg px-6 py-2 font-medium text-white shadow-md transition-colors md:block"
               style={{
                 background:
                   "linear-gradient(to right, #035E71, #5DA9B9, #035E71)",
@@ -123,6 +129,9 @@ export default function ResponsiveNavbar() {
               data-tracking-label="Navbar - Demander une démo"
             >
               Demander une démo
+              <span className="absolute bottom-[70%] left-[92%] rounded-full bg-amber-500 px-2">
+                1
+              </span>
             </button>
           </div>
 
@@ -142,7 +151,7 @@ export default function ResponsiveNavbar() {
                     <motion.a
                       key={link.label}
                       onClick={(e) => {
-                        if (link.label === "Features") {
+                        if (link.label === "Fonctionnalités") {
                           e.preventDefault();
                           scrollToFeatures();
                         }

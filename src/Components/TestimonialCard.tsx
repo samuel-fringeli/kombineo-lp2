@@ -9,17 +9,17 @@ interface TestimonialCardProps {
   role: string;
   company: string;
   tag?: string;
-  bgColor?: string;          // 🔥 Card background color
-  highlightColor?: string;   // 🔥 Highlight text color
-  titleColor?: string;       // 🔥 Title text color
-  reviewColor?: string;      // 🔥 Review text color
-  nameColor?: string;        // 🔥 Name text color
-  roleColor?: string;        // 🔥 Role text color
-  tagTextColor?: string;     // 🔥 Tag text color
+  bgColor?: string; // 🔥 Card background color
+  highlightColor?: string; // 🔥 Highlight text color
+  titleColor?: string; // 🔥 Title text color
+  reviewColor?: string; // 🔥 Review text color
+  nameColor?: string; // 🔥 Name text color
+  roleColor?: string; // 🔥 Role text color
+  tagTextColor?: string; // 🔥 Tag text color
   tagBgColor?: string;
-  companyColor?: string
-  title2?: string
-  ticket?: string
+  companyColor?: string;
+  title2?: string;
+  ticket?: string;
 }
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({
@@ -34,87 +34,74 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   bgColor = "white",
   highlightColor = "#2563EB", // default blue
   titleColor = "#000000",
-  reviewColor = "#374151",   // gray-700
+  reviewColor = "#374151", // gray-700
   nameColor = "#000000",
-  roleColor = "#6B7280",     // gray-500
-  tagTextColor = "#4B5563",  // gray-600
-  tagBgColor = "#FFFFFF",    // gray-100
+  roleColor = "#6B7280", // gray-500
+  tagTextColor = "#4B5563", // gray-600
+  tagBgColor = "#FFFFFF", // gray-100
   companyColor = "#6B7280",
   title2 = "",
-  ticket
+  ticket,
 }) => {
   return (
     <div
-      className={`flex items-start gap-0 shadow-md rounded-2xl max-w-lg border-[2px] border-[#0000000D] shadow-lg font-inter" ${bgColor}`}
+      className={`my-4 flex rounded-2xl shadow-lg w-xs md:w-sm lg:w-lg ${bgColor}`}
     >
-      {/* Profile Image */}
-      <img
-        src={image}
-        alt={name}
-        className="w-[93px] h-48 sm:h-72 md:h-52 lg:h-44 xl:h-48 2xl:h-48 rounded-2xl object-cover"
-      />
+      <img src={image} alt={name} className="w-24 rounded-2xl object-cover" />
 
+      <div className="relative h-72 space-y-4 px-4 py-2 md:h-60 lg:h-52">
+        <h3 className="flex items-center justify-between font-semibold md:text-xl">
+          <div className="flex items-center">
+            <span
+              className="pe-2 font-semibold"
+              style={{ color: highlightColor }}
+            >
+              {highlight}
+            </span>
+            <span style={{ color: titleColor }}>{title}</span>
+          </div>
+          <img src={title2} alt="icon" className="h-auto w-[10%]" />
+        </h3>
 
-      {/* Content */}
-      <div className="flex-1 lg:mx-3 md:mx-3 sm:mx-3 mx-1 my-0 font-inter relative">
-        <div className="">
-          <div className="flex justify-between items-center">
-            <h3 className="lg:text-[22px] md:text-[25px] sm:text-[25px] text-[20px] font-semibold flex justify-between items-center lg:space-x-1 md:space-x-1 sm:space-x-1 space-x-0 " style={{ color: titleColor }}>
-              {/* <div> */}
-              <span className="font-semibold" style={{ color: highlightColor }}>
-                {highlight}
-              </span>{" "} <span>{" "}</span>
-              {title}
-              {/* </div> */}
-            </h3>
-            <img
-              src={title2}
-              alt="icon"
-              className="w-[10%] h-auto"
-            />
+        <blockquote className="text-xs italic" style={{ color: reviewColor }}>
+          "{review}"
+        </blockquote>
+
+        <div className="bottom-2 w-full items-center justify-between pe-8 text-xs md:absolute md:flex md:text-sm">
+          <div>
+            <p
+              className="text-start font-semibold"
+              style={{ color: nameColor }}
+            >
+              {name}
+            </p>
+
+            <p
+              className="text-start text-sm font-medium"
+              style={{ color: roleColor }}
+            >
+              {role} à <span style={{ color: companyColor }}>{company}</span>
+            </p>
           </div>
 
-
-          <p className="italic mt-3 text-center leading-5 lg:text-[12px] md:text-[12px] sm:text-[12px] text-[12px]" style={{ color: reviewColor }}>
-            "{review}"
-          </p>
-          <div className="absolute top-28 left-0 right-0 w-full px-6">
-            <div className="flex justify-between items-center">
-              {/* Left section */}
-              <div className="mt-3">
-                <p className="font-semibold text-start" style={{ color: nameColor }}>
-                  {name}
-                </p>
-                <p className="text-sm font-medium text-start" style={{ color: roleColor }}>
-                  {role} à{" "}
-                  <span style={{ color: companyColor }}>{company}</span>
-                </p>
-              </div>
-
-              {/* Right section */}
-              <div className="mt-1">
-                {tag && (
-                  <button
-                    className={`px-4 py-2 my-4 rounded-lg text-sm font-medium flex justify-center items-center ${tagBgColor}`}
-                    style={{
-                      color: tagTextColor,
-                      backgroundColor: tagBgColor,
-                    }}
-                  >
-                    <img
-                      src={ticket}
-                      alt="icon"
-                      className="w-5 h-5 mr-2 text-[#167BBC]"
-                    />
-                    {tag}
-                  </button>
-                )}
-              </div>
-            </div>
+          <div>
+            {tag && (
+              <button
+                className={`px-4 py-2 my-4 rounded-lg font-medium flex justify-center items-center ${tagBgColor}`}
+                style={{
+                  color: tagTextColor,
+                  backgroundColor: tagBgColor,
+                }}
+              >
+                <img
+                  src={ticket}
+                  alt="icon"
+                  className="mr-2 text-[#167BBC] md:h-5 md:w-5"
+                />
+                {tag}
+              </button>
+            )}
           </div>
-
-
-
         </div>
       </div>
     </div>

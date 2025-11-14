@@ -135,7 +135,7 @@ const FeatureDisplay = () => {
   }, [isMobile]);
 
   return (
-    <div ref={featureSectionRef} className="relative pt-24">
+    <div id="features" ref={featureSectionRef} className="relative pt-24">
       <div
         ref={pinWrapperRef}
         className="m-auto w-[95%] overflow-hidden rounded-2xl border-[2px] border-white bg-gradient-to-b from-[#E0F5FF] to-[#F4F7F8] font-inter"
@@ -167,10 +167,7 @@ const FeatureDisplay = () => {
 
         {/* --- Scrollable Feature Content --- */}
         <div
-          className={`relative z-10 w-full overflow-hidden p-8 lg:pl-56`}
-          style={{
-            height: isMobile ? "auto" : "75vh",
-          }}
+          className={`relative z-10 w-full overflow-hidden p-8 lg:h-[80vh] lg:pl-40 xl:ps-44 2xl:h-[80vh]`}
         >
           <div
             ref={scrollContentRef}
@@ -180,7 +177,7 @@ const FeatureDisplay = () => {
               <div
                 key={i}
                 ref={(el) => (featureRefs.current[i] = el)}
-                className="flex h-full flex-col justify-start p-6 lg:max-h-[70vh] lg:p-8"
+                className="flex flex-col justify-start p-8 pt-4 lg:h-[75vh] xl:h-[80vh]"
                 style={{
                   scrollbarWidth: "thin",
                   scrollBehavior: "smooth",
@@ -208,13 +205,13 @@ const FeatureDisplay = () => {
         </div>
 
         {/* --- Desktop Image --- */}
-        <div className="absolute right-8 top-8 hidden w-[40%] lg:block">
+        <div className="absolute right-8 top-8 hidden lg:block">
           <AnimatePresence mode="wait">
             <motion.img
               key={activeIndex}
               src={features[activeIndex].img2}
               alt={features[activeIndex].title}
-              className="max-h-[70vh] w-full rounded-xl object-contain"
+              className="h-[70vh] rounded-xl object-contain"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}

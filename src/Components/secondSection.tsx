@@ -251,7 +251,7 @@ const Cards = () => {
 
   return (
     <>
-      <div className="-mt-40 w-full bg-[#F7FEFF] pb-40">
+      <div className="-mt-40 w-full bg-[#F7FEFF]">
         <div className="mb-20 text-center">
           <div className="mx-auto max-w-7xl px-4 pb-24 pt-40 lg:px-6">
             <h1 className="mb-6 space-x-4 text-center font-geist text-xl font-semibold md:text-3xl lg:text-5xl">
@@ -267,26 +267,28 @@ const Cards = () => {
             <div className="relative mt-12">
               {/* Fading effect overlays */}
               <div className="pointer-events-none absolute inset-0 z-10">
-                <div className="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-white to-transparent"></div>
-                <div className="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-white to-transparent"></div>
+                <div className="absolute left-0 top-0 h-full w-12 bg-gradient-to-r from-white to-transparent md:w-16 lg:w-24"></div>
+                <div className="absolute right-0 top-0 h-full w-12 bg-gradient-to-l from-white to-transparent md:w-16 lg:w-24"></div>
               </div>
 
               {/* First row */}
               <div className="w-full overflow-hidden">
                 <motion.div
-                  className="ml-14 flex w-[600%] space-x-10 sm:w-[500%] md:w-[600%] lg:w-[300%]"
-                  variants={{}}
-                  animate={{ x: ["0%", "-29%"] }}
+                  className="flex w-[600%] space-x-8 sm:w-[500%] md:w-[300%] lg:w-[300%]"
+                  animate={{ x: ["0%", "-60%"] }}
                   transition={{
                     duration: 25,
                     ease: "linear",
                     repeat: Infinity,
                   }}
                 >
-                  {[...Array(1)].map((_, index) => (
-                    <div key={index} className="flex space-x-10">
+                  {[...Array(2)].map((_, duplicatedIndex) => (
+                    <div key={duplicatedIndex} className="flex gap-8">
                       {cardTop.map((card, idx) => (
-                        <TestimonialCard key={idx} {...card} />
+                        <TestimonialCard
+                          key={`${duplicatedIndex}-${idx}`}
+                          {...card}
+                        />
                       ))}
                     </div>
                   ))}
@@ -294,19 +296,19 @@ const Cards = () => {
               </div>
 
               {/* Second row */}
-              <div className="mt-6 w-full overflow-hidden">
+              <div className="w-full overflow-hidden">
                 <motion.div
-                  className="mr-14 flex w-[600%] space-x-10 sm:w-[500%] md:w-[300%] lg:w-[300%]"
+                  className="flex w-[600%] space-x-8 sm:w-[500%] md:w-[300%] lg:w-[300%]"
                   variants={{}}
-                  animate={{ x: ["-29%", "0%"] }}
+                  animate={{ x: ["-60%", "-0%"] }}
                   transition={{
                     duration: 25,
                     ease: "linear",
                     repeat: Infinity,
                   }}
                 >
-                  {[...Array(1)].map((_, index) => (
-                    <div key={index} className="flex space-x-10">
+                  {[...Array(2)].map((_, index) => (
+                    <div key={index} className="flex gap-8">
                       {cardBelow.map((card, idx) => (
                         <TestimonialCard key={idx} {...card} />
                       ))}
@@ -398,7 +400,7 @@ const Cards = () => {
             Gagnez en clarté, efficacité et en chiffre d’affaires dès la prise
             en main
           </p>
-          <div id="features" className="mt-10 flex items-center justify-center">
+          <div className="mt-10 flex items-center justify-center">
             <SharedButton
               label="Essayez gratuitement"
               href="https://app.kombineo.com/signup"
@@ -413,22 +415,19 @@ const Cards = () => {
       <FeatureDisplay />
 
       <div className="mt-30 mx-auto max-w-4xl text-center">
-        <div className="">
-          <h1 className="mb-3 text-center font-geist text-xl font-semibold md:text-3xl lg:text-4xl">
-            <span className="bg-[linear-gradient(92.36deg,#000000_1.98%,#7F7F7F_37.95%,#000000_62.94%,#6E6E6E_72.43%,#000000_92.41%,#999999_105.9%)] bg-clip-text text-transparent">
-              {"Kombineo s'adapte à votre"}
-            </span>
-            <br />
-            <span>Tunnel de vente, </span>
-            <span className="bg-[linear-gradient(90deg,#035E71_0%,#5DA9B9_28.37%,#035E71_76.92%)] bg-clip-text text-transparent">
-              pas l'inverse.
-            </span>
-          </h1>
-          <div></div>
-        </div>
+        <h1 className="mb-3 text-center font-geist text-xl font-semibold md:text-3xl lg:text-4xl">
+          <span className="bg-[linear-gradient(92.36deg,#000000_1.98%,#7F7F7F_37.95%,#000000_62.94%,#6E6E6E_72.43%,#000000_92.41%,#999999_105.9%)] bg-clip-text text-transparent">
+            Kombineo s'adapte à votre
+          </span>
+          <br />
+          <span>Tunnel de vente, </span>
+          <span className="bg-[linear-gradient(90deg,#035E71_0%,#5DA9B9_28.37%,#035E71_76.92%)] bg-clip-text text-transparent">
+            pas l'inverse.
+          </span>
+        </h1>
       </div>
       <motion.div
-        className="m-auto mb-4 mt-8 flex w-[75%] flex-col items-center justify-center gap-4 lg:flex-row"
+        className="m-auto mb-4 flex w-[75%] flex-col items-center justify-center gap-4 lg:flex-row"
         initial={{ opacity: 0, y: 50 }}
         variants={{}}
         whileInView={{ opacity: 1, y: 0 }}

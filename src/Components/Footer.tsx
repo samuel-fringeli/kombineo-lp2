@@ -6,6 +6,7 @@ import whatsapp from "../assets/image 67.svg";
 import desktopGif from "/Videos/MOCKUP_ORDI_1.gif";
 import mobileGif from "/Videos/MOCKUP_TEL_1.mov (1).gif";
 import SharedButton from "../shared-components/SharedButton";
+import { useNavigate } from "react-router-dom";
 
 const gradientBg = "linear-gradient(203.46deg, #5DA9B9 8.86%, #035E71 71.71%)";
 const gradientText =
@@ -13,9 +14,16 @@ const gradientText =
 const gradientBorder =
   "linear-gradient(90deg, #035E71 0%, #5DA9B9 50%, #2D8193 100%)";
 
+interface FooterLinkItem {
+  label: string;
+  path: string;
+  id?: string; // for scrolling to sections
+  icon?: string; // optional icon (ex: WhatsApp)
+}
+
 interface FooterLinkColumn {
   title: string;
-  links: (string | ReactNode)[];
+  links: FooterLinkItem[];
 }
 
 interface SocialLink {
@@ -25,32 +33,43 @@ interface SocialLink {
 
 const footerLinks: FooterLinkColumn[] = [
   {
-    title: "",
+    title: "Liens rapides",
     links: [
-      "1,000+ sociétés utilisent Kombineo pour optimiser 100% de leurs leads",
+      { label: "Fonctionnalités", path: "/", id: "features" },
+      { label: "Tarifs", path: "/pricing" },
+      {
+        label: "Ressources",
+        path: "https://kombineo-crm.gitbook.io/kombineo-crm-documentation/",
+      },
     ],
   },
   {
-    title: "Commencez",
-    links: ["Obtenir une démo", "Commencez gratuitement", "Sign in"],
+    title: "Société",
+    links: [
+      { label: "À propos", path: "/#1" },
+      { label: "Recrutement", path: "mailto:info@kombineo.com" },
+      {
+        label: "Programme partenaire",
+        path: "https://affiliate.kombineo.com/",
+      },
+    ],
   },
   {
-    title: "Kombineo CRM",
-    links: ["Fonctionnnalités", "Prix", "Témoignages", "FAQ’s"],
+    title: "Legal",
+    links: [
+      { label: "Conditions générales d’utilisation", path: "/terms" },
+      { label: "Politique de confidentialité", path: "/privacy" },
+    ],
   },
   {
     title: "Contact",
     links: [
-      "info@kombineo.com",
-      <>
-        <img
-          key="whatsapp"
-          src={whatsapp}
-          alt="WhatsApp"
-          className="mr-1 inline w-4"
-        />
-        +33767906858
-      </>,
+      { label: "info@kombineo.com", path: "mailto:info@kombineo.com" },
+      {
+        label: "+33767906858",
+        path: "https://wa.me/33767906858",
+        icon: whatsapp, // use this in your component
+      },
     ],
   },
 ];
@@ -93,6 +112,7 @@ const socialLinks: SocialLink[] = [
 ];
 
 const Footer: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen" style={{ background: gradientBg }}>
       {/* Hero Section */}
@@ -171,7 +191,38 @@ const Footer: React.FC = () => {
                 >
                   {links.map((link, i) => (
                     <p key={i} className="transition-colors hover:text-white">
-                      {link}
+                      <span // Use a non-anchor tag for consistent click handling
+                        onClick={(e) => {
+                          const path = link.path;
+
+                          // 1. Check for external link
+                          if (
+                            path.startsWith("https://") ||
+                            path.startsWith("http://")
+                          ) {
+                            // Direct browser redirect for external sites
+                            window.location.href = path;
+                            return;
+                          }
+
+                          // 2. Handle internal link with specific state (like scrolling to features)
+                          if (link.id) {
+                            navigate("/", {
+                              state: { scrollToFeatures: true },
+                            });
+                          }
+                          // 3. Handle standard internal link
+                          else {
+                            navigate(path);
+                          }
+                        }}
+                        className="flex cursor-pointer items-center gap-1"
+                      >
+                        {link.icon && (
+                          <img src={link.icon} alt="" className="inline w-4" />
+                        )}
+                        {link.label}
+                      </span>
                     </p>
                   ))}
                 </div>

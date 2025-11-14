@@ -146,8 +146,8 @@ const FaqSection: React.FC = () => {
   });
 
   return (
-    <section className="py-10 sm:py-14">
-      <div className="mx-auto mt-52 max-w-7xl px-4 sm:px-6">
+    <section className="py-14">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-12 lg:gap-14">
           {/* Left Column */}
           <div className="lg:col-span-5">
