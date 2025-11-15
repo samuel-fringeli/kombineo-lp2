@@ -18,6 +18,7 @@ const Hero = () => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
+      id="hero"
     >
       <div className="mx-auto max-w-4xl text-center">
         <Navbar />

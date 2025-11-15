@@ -171,7 +171,7 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Footer Section */}
-      <footer className="pb-8 pt-4 font-inter text-white">
+      <footer id="footer" className="pb-8 pt-4 font-inter text-white">
         <div className="container mx-auto px-12">
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5">
             {footerLinks.map(({ title, links }, idx) => (

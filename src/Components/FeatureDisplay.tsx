@@ -211,7 +211,7 @@ const FeatureDisplay = () => {
               key={activeIndex}
               src={features[activeIndex].img2}
               alt={features[activeIndex].title}
-              className="h-[70vh] rounded-xl object-contain"
+              className="h-[62vh] rounded-xl object-contain xl:h-[70vh]"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
