@@ -21,9 +21,11 @@ export default function ResponsiveNavbar() {
   ];
 
   const scrollToFeatures = () => {
-    if (pathname.includes("pricing")) {
+    // If we're not on the home page, navigate to home first then scroll
+    if (pathname !== "/") {
       navigate("/", { state: { scrollToFeatures: true } });
     } else {
+      // If we're already on home page, just scroll to features
       const el = document.getElementById("features");
       if (el) {
         el.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -115,7 +117,7 @@ export default function ResponsiveNavbar() {
             <button
               onClick={() =>
                 handleButtonNavigation(
-                  "https://app.kombineo.com/demo",
+                  "https://calendly.com/tom-kombineo/site-call-demo",
                   "Navbar - Demander une démo",
                   "demo"
                 )
@@ -188,7 +190,7 @@ export default function ResponsiveNavbar() {
                     <button
                       onClick={() =>
                         handleButtonNavigation(
-                          "https://app.kombineo.com/demo",
+                          "https://calendly.com/tom-kombineo/site-call-demo",
                           "Navbar Mobile - Demander une démo",
                           "demo"
                         )

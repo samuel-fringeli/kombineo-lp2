@@ -1,15 +1,20 @@
+import { useEffect } from "react";
 import { privacyData as policy } from "./privacyData";
-import Hero from "../Components/hero";
+import Navbar from "../Components/navBar";
 import Footer from "../Components/Footer";
 const PrivacyPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div
       style={{
         background: "linear-gradient(180deg, #def9fd 4.07%, #fffffe 100%)",
+        minHeight: "100vh",
       }}
     >
-      <Hero />
-      <div className="container mx-auto max-w-4xl px-4">
+      <Navbar />
+      <div className="container mx-auto max-w-4xl px-4 pt-32 pb-20">
         <h1 className="mb-4 text-3xl font-bold">{policy.title}</h1>
         <p className="mb-2 text-sm text-gray-500">
           Dernière mise à jour : {policy.lastUpdated}

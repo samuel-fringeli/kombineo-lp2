@@ -176,7 +176,9 @@ const FeatureDisplay = () => {
             {features.map((f, i) => (
               <div
                 key={i}
-                ref={(el) => (featureRefs.current[i] = el)}
+                ref={(el) => {
+                  if (el) featureRefs.current[i] = el;
+                }}
                 className="flex flex-col justify-start p-8 pt-4 lg:h-[75vh] xl:h-[80vh]"
                 style={{
                   scrollbarWidth: "thin",

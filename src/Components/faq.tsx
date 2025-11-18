@@ -2,6 +2,7 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import minus from "../assets/minus.svg";
 import plus from "../assets/Plus.svg";
+import { handleButtonNavigation } from "../utils/tracking";
 
 interface FaqItem {
   question: string;
@@ -168,6 +169,11 @@ const FaqSection: React.FC = () => {
               productivité et la collaboration de votre équipe à chaque étape.
             </p>
             <button
+              onClick={() => handleButtonNavigation(
+                "https://calendly.com/tom-kombineo/site-call-demo",
+                "FAQ - Booker une démo",
+                "demo"
+              )}
               style={{
                 background:
                   "linear-gradient(to right, #035E71, #5DA9B9, #035E71)",

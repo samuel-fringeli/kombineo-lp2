@@ -3,7 +3,7 @@ import SharedButton from "../shared-components/SharedButton";
 
 const FixedDemoButton = () => {
   const [isVisible, setIsVisible] = useState(true);
-  const buttonRef = useRef(null);
+  const buttonRef = useRef<HTMLDivElement>(null);
 
   // Function to determine if the button should be hidden
   const checkVisibility = useCallback(() => {
@@ -65,7 +65,7 @@ const FixedDemoButton = () => {
       <SharedButton
         className="!bg-gradient-to-r from-[#035E71] via-[#5DA9B9] to-[#035E71] !shadow-[#035E71]"
         label="Demander une démo"
-        href="https://app.kombineo.com/"
+        href="https://calendly.com/tom-kombineo/site-call-demo"
       />
     </div>
   );

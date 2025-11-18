@@ -3,8 +3,8 @@ import klogo from "../assets/FooterLogo.svg";
 import linkedIn from "../assets/Lin.svg";
 import instagram from "../assets/instra.svg";
 import whatsapp from "../assets/image 67.svg";
-import desktopGif from "/Videos/MOCKUP_ORDI_1.gif";
-import mobileGif from "/Videos/MOCKUP_TEL_1.mov (1).gif";
+// import desktopGif from "/Videos/MOCKUP_ORDI_1.gif";
+// import mobileGif from "/Videos/MOCKUP_TEL_1.mov (1).gif";
 import SharedButton from "../shared-components/SharedButton";
 import { useNavigate } from "react-router-dom";
 
@@ -29,6 +29,7 @@ interface FooterLinkColumn {
 interface SocialLink {
   icon: string | ReactNode;
   name: string;
+  url: string;
 }
 
 const footerLinks: FooterLinkColumn[] = [
@@ -55,10 +56,10 @@ const footerLinks: FooterLinkColumn[] = [
     ],
   },
   {
-    title: "Legal",
+    title: "Légal",
     links: [
-      { label: "Conditions générales d’utilisation", path: "/terms" },
       { label: "Politique de confidentialité", path: "/privacy" },
+      { label: "Conditions générales d'utilisation", path: "/terms" },
     ],
   },
   {
@@ -75,9 +76,14 @@ const footerLinks: FooterLinkColumn[] = [
 ];
 
 const socialLinks: SocialLink[] = [
-  { icon: linkedIn, name: "LinkedIn" },
+  { 
+    icon: linkedIn, 
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/tomchauvet/"
+  },
   {
     name: "YouTube",
+    url: "https://www.youtube.com/@Tom_Chauvet",
     icon: (
       <svg
         width="23"
@@ -108,18 +114,23 @@ const socialLinks: SocialLink[] = [
       </svg>
     ),
   },
-  { icon: instagram, name: "Instagram" },
+  { 
+    icon: instagram, 
+    name: "Instagram",
+    url: "https://www.instagram.com/kombineo?igsh=eHVlMXZma2h4OXQ2"
+  },
 ];
 
 const Footer: React.FC = () => {
   const navigate = useNavigate();
+  const currentYear = new Date().getFullYear();
   return (
     <div className="min-h-screen" style={{ background: gradientBg }}>
       {/* Hero Section */}
       <section className="mx-auto mt-20 px-4 py-12 sm:py-16 lg:px-8">
         <div className="mx-auto w-[95%] space-y-8 rounded-2xl bg-white p-6 text-center shadow-xl sm:rounded-3xl sm:p-8 lg:p-12">
           <h1 className="font-Geist text-[35px] font-semibold leading-tight text-gray-800 sm:text-[45px] lg:text-[70px]">
-            Vous méritez mieux qu’un <br />
+            Vous méritez mieux qu'un <br />
             <span
               className="bg-clip-text font-bold text-transparent"
               style={{
@@ -136,12 +147,18 @@ const Footer: React.FC = () => {
             Zéro lead perdu, 100% de ventes maîtrisées.
           </p>
 
-          <div className="flex justify-center">
-            <SharedButton label="Commencez en 1 clic" gradientDirection="ltr" />
+          <div className="flex justify-center -mb-8">
+            <SharedButton 
+              label="Commencez en 1 clic" 
+              gradientDirection="ltr"
+              href="https://app.kombineo.com/onboarding"
+              buttonType="cta"
+              trackingLabel="Footer - Commencez en 1 clic"
+            />
           </div>
 
           {/* Responsive GIFs */}
-          <div className="relative -mt-12 w-full overflow-hidden rounded-2xl">
+          {/* <div className="relative -mt-12 w-full overflow-hidden rounded-2xl">
             <img
               src={desktopGif}
               alt="Desktop preview"
@@ -152,7 +169,7 @@ const Footer: React.FC = () => {
               alt="Mobile preview"
               className="block h-[50vh] w-full object-cover md:hidden"
             />
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -168,7 +185,7 @@ const Footer: React.FC = () => {
             width: "90%",
           }}
         ></div>
-      </div>
+                  </div>
 
       {/* Footer Section */}
       <footer id="footer" className="pb-8 pt-4 font-inter text-white">
@@ -192,7 +209,7 @@ const Footer: React.FC = () => {
                   {links.map((link, i) => (
                     <p key={i} className="transition-colors hover:text-white">
                       <span // Use a non-anchor tag for consistent click handling
-                        onClick={(e) => {
+                        onClick={() => {
                           const path = link.path;
 
                           // 1. Check for external link
@@ -222,7 +239,7 @@ const Footer: React.FC = () => {
                           <img src={link.icon} alt="" className="inline w-4" />
                         )}
                         {link.label}
-                      </span>
+                  </span>
                     </p>
                   ))}
                 </div>
@@ -235,9 +252,10 @@ const Footer: React.FC = () => {
                 Social
               </h3>
               <div className="space-y-2">
-                {socialLinks.map(({ icon, name }, i) => (
+                {socialLinks.map(({ icon, name, url }, i) => (
                   <div
                     key={i}
+                    onClick={() => window.open(url, '_blank')}
                     className="flex h-[40px] w-[134px] cursor-pointer items-center gap-2 rounded-[8px] bg-[#042E49] px-3 text-sm transition-colors hover:bg-[#064b6b]"
                   >
                     <div className="flex h-6 w-6 items-center justify-center">
@@ -259,19 +277,31 @@ const Footer: React.FC = () => {
           {/* Footer Bottom */}
           <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white pt-8 sm:flex-row">
             <p className="text-[15px] text-[#C2C2C2]">
-              © 2025 Kombineo. All rights reserved.
+                © {currentYear} Kombineo. Tous droits réservés.
             </p>
 
             {/*<div className="flex items-center gap-2 rounded-full bg-[#042E49] px-3 py-1 text-xs">
               <span className="h-2 w-2 rounded-full bg-green-400"></span>
-              All Systems Operational
+                All Systems Operational
             </div>*/}
 
             <div className="flex gap-4 text-[12px] text-[#C2C2C2]">
-              <span className="cursor-pointer hover:text-white">
+              <span 
+                className="cursor-pointer hover:text-white"
+                onClick={() => {
+                  navigate('/privacy');
+                  window.scrollTo(0, 0);
+                }}
+              >
                 Politique de confidentialité
               </span>
-              <span className="cursor-pointer hover:text-white">
+              <span 
+                className="cursor-pointer hover:text-white"
+                onClick={() => {
+                  navigate('/terms');
+                  window.scrollTo(0, 0);
+                }}
+              >
                 Conditions générales
               </span>
             </div>

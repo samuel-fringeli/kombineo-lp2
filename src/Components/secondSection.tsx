@@ -253,7 +253,7 @@ const Cards = () => {
     <>
       <div className="-mt-40 w-full bg-[#F7FEFF]">
         <div className="mb-20 text-center">
-          <div className="mx-auto max-w-7xl px-4 pb-24 pt-40 lg:px-6">
+          <div className="mx-auto max-w-7xl px-4 pb-24 pt-64 lg:px-6">
             <h1 className="mb-6 space-x-4 text-center font-geist text-xl font-semibold md:text-3xl lg:text-5xl">
               <span className="bg-gradient-to-r from-[#035E71] via-[#5DA9B9] to-[#035E71] bg-clip-text text-transparent">
                 24M€
@@ -403,7 +403,7 @@ const Cards = () => {
           <div className="mt-10 flex items-center justify-center">
             <SharedButton
               label="Essayez gratuitement"
-              href="https://app.kombineo.com/signup"
+              href="https://app.kombineo.com/onboarding"
               buttonType="trial"
               trackingLabel="Features Section - Essayez gratuitement"
             />

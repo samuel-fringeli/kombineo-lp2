@@ -44,6 +44,16 @@ export const isAppKombineoLink = (url: string): boolean => {
   }
 };
 
+// Check if URL is a Calendly link
+export const isCalendlyLink = (url: string): boolean => {
+  try {
+    const urlObj = new URL(url, window.location.origin);
+    return urlObj.hostname === 'calendly.com' || urlObj.hostname === 'www.calendly.com';
+  } catch (e) {
+    return false;
+  }
+};
+
 // Add parameters to a URL
 export const addParamsToUrl = (url: string, params: Record<string, string>): string => {
   try {
@@ -81,13 +91,13 @@ export const processUrlWithTracking = (url: string): string => {
       utm_campaign: `fpr_${fprValue}`,
     };
     
-    // Add FPR parameters to app.kombineo.com links
-    if (isAppKombineoLink(finalUrl)) {
+    // Add FPR parameters to app.kombineo.com or Calendly links
+    if (isAppKombineoLink(finalUrl) || isCalendlyLink(finalUrl)) {
       finalUrl = addParamsToUrl(finalUrl, fprParams);
     }
   } else if (Object.keys(utmParams).length > 0) {
-    // If no FPR but we have UTM parameters, add them to app.kombineo.com links
-    if (isAppKombineoLink(finalUrl)) {
+    // If no FPR but we have UTM parameters, add them to app.kombineo.com or Calendly links
+    if (isAppKombineoLink(finalUrl) || isCalendlyLink(finalUrl)) {
       finalUrl = addParamsToUrl(finalUrl, utmParams);
     }
   }
