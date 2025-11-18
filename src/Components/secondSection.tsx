@@ -25,7 +25,7 @@ import LogoCard4 from "../assets/4-viralite_.png";
 import LogoCard5 from "../assets/5-maxen.png";
 import LogoCard6 from "../assets/6-antoinereydel.png";
 import LogoCard7 from "../assets/7-salesmindset.png";
-import LogoCard8 from "../assets/8-agenceaiaa.png";
+import LogoCard8 from "../assets/8-agenceOiaa.png";
 import GrayArrow from "../assets/GrayArrow.svg";
 import SharedButton from "../shared-components/SharedButton";
 import FeatureDisplay from "./FeatureDisplay";
@@ -72,7 +72,7 @@ const Cards = () => {
       review:
         "Grâce au setting intégré, j’ai augmenté mes prises de RDV : Kombineo est le seul sur le marché qui fait ça directement depuis la landing page.",
       name: "Maxence Rigottier",
-      role: "CEA",
+      role: "CEO",
       company: "Tunnel-de-vente.fr",
       tag: "Infopreneur",
       bgColor: "#FFFFFF",
@@ -95,7 +95,7 @@ const Cards = () => {
       review:
         "On l’a testé dans le cadre de nos challenges, et honnêtement, on ne s’attendait pas à un résultat aussi bluffant ! Nous avons tous en temps réel pour piloter",
       name: "Alexandre Roth",
-      role: "CEA",
+      role: "CEO",
       company: "Darons du Biz",
       tag: "Challenge",
       bgColor: "bg-gradient-to-r from-[#5DA9B9] via-[#035E71] to-[#035E71]",
@@ -117,7 +117,7 @@ const Cards = () => {
       review:
         "Nous avons abandonné notre ancien CRM pour Kombineo : tout est pensé pour optimiser mes challenges et optimiser mon CA dans un marché qui se durcit",
       name: "Mehdi Baer",
-      role: "CEA",
+      role: "CEO",
       company: "Vortex",
       tag: "Challenge",
       bgColor: "#FFFFFF",
@@ -137,7 +137,7 @@ const Cards = () => {
       image: fourth,
       highlight: "3x",
       title: "plus de productivité",
-      review: "Témoignages",
+      review: "Nous avons pu brancher Kombineo du jour au lendemain pour absorber tout le volume et tracker 100% de la data pour analyser ce qui a le mieux fonctionné. Très intuitif !",
       name: "Loïc Bourget",
       role: "CEO",
       company: "Mastermind Viralité",
@@ -164,7 +164,7 @@ const Cards = () => {
       review:
         "J’ai pu doubler mon taux de closing grâce aux analyses des dashboards personnalisés, et mes équipes ont tout de suite bien compris comment les utiliser efficacement.",
       name: "Tibtalks",
-      role: "CEA",
+      role: "CEO",
       company: "Magic Consulting",
       tag: "Infopreneur",
       bgColor: "bg-gradient-to-r from-[#5DA9B9] via-[#035E71] to-[#035E71]",
@@ -186,7 +186,7 @@ const Cards = () => {
       review:
         "Intégrer Kombineo est la première chose que je fais quand je veux faire performer un écosystème et garantir mes résultats.",
       name: "Ossama Ramhry",
-      role: "CEA",
+      role: "CEO",
       company: "SalesMindset",
       tag: "Head of Sales",
       bgColor: "#FFFFFF",
@@ -209,7 +209,7 @@ const Cards = () => {
       review:
         "Avec Kombineo, j’ai enfin tout standardisé dans un outil pensé pour les business high ticket, ce qui me permet de prendre mes décisions sur de la vraie data.",
       name: "Antoine Reydel",
-      role: "CEA",
+      role: "CEO",
       company: "Reydel Coaching",
       tag: "Coach",
       bgColor: "bg-gradient-to-r from-[#5DA9B9] via-[#035E71] to-[#035E71]",
