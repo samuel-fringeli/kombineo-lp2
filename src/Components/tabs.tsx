@@ -112,30 +112,9 @@ const TabCard: React.FC = () => {
   const activeTab = tabsData[activeIndex];
 
   return (
-    <div className="mx-auto mt-2 max-w-4xl rounded-2xl border-[1px] border-[#E4DFDC] bg-white p-6 font-inter shadow-lg">
+    <div className="m-4 max-w-4xl rounded-2xl border-[1px] border-[#E4DFDC] bg-white p-6 font-inter shadow-lg lg:mx-auto">
       {/* Tabs */}
-      {/* <div className="scrollbar-hide mb-6 flex gap-6 overflow-x-auto pb-2">
-        {tabsData.map((tab, idx) => (
-          <button
-            key={idx}
-            onClick={() => setActiveIndex(idx)}
-            className={`px-9 py-4 whitespace-nowrap rounded-lg text-sm font-medium transition flex justify-center gap-2 text-[#111111] border cursor-pointer items-center ${
-              idx === activeIndex
-                ? "bg-[linear-gradient(98.23deg,#035E71_-6.67%,#5DA9B9_45.08%,#035E71_97.28%)] text-white"
-                : "bg-gray-50 border-[#E4DFDC] border-[1px] text-gray-600 hover:bg-white"
-            }`}
-          >
-            {idx === activeIndex ? (
-              <img className="h-5 w-5" src={tab.img2} alt={tab.label} />
-            ) : (
-              <img className="h-5 w-5" src={tab.image} alt={tab.label} />
-            )}
-
-            {tab.label}
-          </button>
-        ))}
-      </div> */}
-      <div className="mb-6 flex flex-wrap justify-center gap-3 pb-2 [-ms-overflow-style:none] [scrollbar-width:none] sm:flex-nowrap sm:gap-6 sm:overflow-x-auto sm:px-0 sm:pb-3 [&::-webkit-scrollbar]:hidden">
+      <div className="mb-6 flex flex-wrap justify-center gap-3 pb-2 [-ms-overflow-style:none] [scrollbar-width:none] md:flex-nowrap md:gap-6 md:overflow-x-auto md:px-0 md:pb-3 [&::-webkit-scrollbar]:hidden">
         {tabsData.map((tab, idx) => (
           <button
             key={idx}
@@ -145,7 +124,7 @@ const TabCard: React.FC = () => {
         rounded-lg border cursor-pointer font-medium transition
         text-[#111111]
         w-[calc(50%-0.375rem)] sm:w-auto
-        px-3 py-2 text-xs sm:px-6 sm:py-3 sm:text-sm md:px-9 md:py-4
+        px-3 py-2 text-xs sm:px-6 sm:py-3 sm:text-sm lg:px-9 lg:py-4
         ${
           idx === activeIndex
             ? "bg-[linear-gradient(98.23deg,#035E71_-6.67%,#5DA9B9_45.08%,#035E71_97.28%)] text-white"

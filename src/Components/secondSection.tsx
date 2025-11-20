@@ -29,6 +29,7 @@ import LogoCard8 from "../assets/8-agenceaiaa.png";
 import GrayArrow from "../assets/GrayArrow.svg";
 import SharedButton from "../shared-components/SharedButton";
 import FeatureDisplay from "./FeatureDisplay";
+import Tabs from "./tabs";
 
 // Register ScrollTrigger
 gsapLib.registerPlugin(ScrollTrigger);
@@ -335,6 +336,7 @@ const Cards = () => {
             <div className="flex w-[90%] items-center justify-center">
               <img src={line} alt="" />
             </div>
+            <Tabs />
           </div>
         </div>
 
