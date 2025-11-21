@@ -164,7 +164,7 @@ const PricingSection: React.FC = () => {
             <button
               onClick={() =>
                 handleButtonNavigation(
-                  "https://app.kombineo.com/onboarding?plan=scale",
+                  "https://calendly.com/tom-kombineo/site-call-demo",
                   "Pricing - Get Started (Scale)",
                   "cta"
                 )
@@ -235,7 +235,7 @@ const PricingSection: React.FC = () => {
             <button
               onClick={() =>
                 handleButtonNavigation(
-                  "https://app.kombineo.com/onboarding",
+                  "https://calendly.com/tom-kombineo/site-call-demo",
                   "Pricing - Start 7-day free trial (Power)",
                   "trial"
                 )

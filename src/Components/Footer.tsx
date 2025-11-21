@@ -151,7 +151,7 @@ const Footer: React.FC = () => {
             <SharedButton 
               label="Commencez en 1 clic" 
               gradientDirection="ltr"
-              href="https://app.kombineo.com/onboarding"
+              href="https://calendly.com/tom-kombineo/site-call-demo"
               buttonType="cta"
               trackingLabel="Footer - Commencez en 1 clic"
             />

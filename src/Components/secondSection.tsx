@@ -25,7 +25,7 @@ import LogoCard4 from "../assets/4-viralite_.png";
 import LogoCard5 from "../assets/5-maxen.png";
 import LogoCard6 from "../assets/6-antoinereydel.png";
 import LogoCard7 from "../assets/7-salesmindset.png";
-import LogoCard8 from "../assets/8-agenceOiaa.png";
+import LogoCard8 from "../assets/8-agenceaiaa.png";
 import GrayArrow from "../assets/GrayArrow.svg";
 import SharedButton from "../shared-components/SharedButton";
 import FeatureDisplay from "./FeatureDisplay";
@@ -403,7 +403,7 @@ const Cards = () => {
           <div className="mt-10 flex items-center justify-center">
             <SharedButton
               label="Essayez gratuitement"
-              href="https://app.kombineo.com/onboarding"
+              href="https://calendly.com/tom-kombineo/site-call-demo"
               buttonType="trial"
               trackingLabel="Features Section - Essayez gratuitement"
             />

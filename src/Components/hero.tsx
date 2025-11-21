@@ -1,6 +1,5 @@
 import ticket from '../assets/Vector.svg'
 import path from '../assets/path27.svg'
-import Enter from '../assets/svg10610178807.svg'
 import Enter2 from '../assets/Vector2.svg'
 import Green from '../assets/Button-tiny.svg'
 import image from '../assets/G2.png'
@@ -54,10 +53,10 @@ const Hero = () => {
           </p>
 
           {/* CTA Button */}
-          <div className='flex justify-center items-center gap-3'>
+          <div className='flex justify-center items-center'>
             <button
               onClick={() => handleButtonNavigation(
-                "https://app.kombineo.com/onboarding",
+                "https://calendly.com/tom-kombineo/site-call-demo",
                 "Hero - Essayez gratuitement",
                 "trial"
               )}
@@ -71,17 +70,6 @@ const Hero = () => {
                 Essayez gratuitement
               </span>
               <img src={Enter2} alt="" className="w-[15px] h-[15px]" />
-            </button>
-
-            <button 
-              onClick={() => handleButtonNavigation(
-                "https://calendly.com/tom-kombineo/site-call-demo",
-                "Hero - Voir démo",
-                "demo"
-              )}
-              className="bg-[#FFFFFF] cursor-pointer hover:text-white lg:px-8 md:px-8 sm:px-5 px-1 py-3 font-semibold mb-12 shadow-md rounded-lg flex justify-center items-center lg:space-x-2 md:space-x-2 sm:space-x-2 space-x-0">
-              <span className='bg-gradient-to-r from-[#035E71] via-[#5DA9B9] to-[#035E71] bg-clip-text text-transparent hover:text-black text-[14px]'>Voir démo</span>
-              <img src={Enter} alt="" className='w-[25px] h-[25px]' />
             </button>
           </div>
 
