@@ -35,9 +35,9 @@ const TermsPage = () => {
                 ))}
               </ul>
             )}
-            {section.links && section.links.length > 0 && (
+            {("links" in section) && Array.isArray(section.links) && section.links.length > 0 && (
               <ul className="my-4 list-disc pl-6 space-y-2">
-                {section.links.map((link, i) => (
+                {section.links.map((link: any, i: number) => (
                   <li key={i}>
                     <a
                       href={link.href}
@@ -54,7 +54,7 @@ const TermsPage = () => {
             {section.subSections && section.subSections.length > 0 &&
               section.subSections.map((sub: any, i: number) => (
                 <div key={i} className="mt-4 ml-4 pl-4 border-l-2 border-gray-200">
-                  <h4 className="mb-2 text-lg font-medium text-gray-800">{sub.title}</h4>
+                  {sub.title && <h4 className="mb-2 text-lg font-medium text-gray-800">{sub.title}</h4>}
                   {sub.paragraphs && sub.paragraphs.map((p: string, j: number) => (
                     <p key={j} className="mb-2 text-gray-700 leading-relaxed">{p}</p>
                   ))}
@@ -62,6 +62,25 @@ const TermsPage = () => {
                     <ul className="my-3 list-disc pl-6 space-y-1">
                       {sub.list.map((li: string, k: number) => (
                         <li key={k} className="text-gray-700">{li}</li>
+                      ))}
+                    </ul>
+                  )}
+                  {sub.paragraphs2 && sub.paragraphs2.map((p: string, j: number) => (
+                    <p key={`p2-${j}`} className="mb-2 text-gray-700 leading-relaxed">{p}</p>
+                  ))}
+                  {sub.links && sub.links.length > 0 && (
+                    <ul className="my-3 list-disc pl-6 space-y-2">
+                      {sub.links.map((link: any, k: number) => (
+                        <li key={k}>
+                          <a
+                            href={link.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:underline font-medium"
+                          >
+                            {link.label}
+                          </a>
+                        </li>
                       ))}
                     </ul>
                   )}

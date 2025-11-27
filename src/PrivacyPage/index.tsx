@@ -36,14 +36,17 @@ const PrivacyPage = () => {
             {section.list && (
               <ul className="mb-2 list-disc pl-6 text-gray-700">
                 {section.list.map((item, idx) => (
-                  <li key={idx}>
-                    {typeof item === "string"
-                      ? item
-                      : `${item.term}: ${item.definition}`}
-                  </li>
+                  <li key={idx}>{item}</li>
                 ))}
               </ul>
             )}
+
+            {section.additionalParagraphs &&
+              section.additionalParagraphs.map((p, idx) => (
+                <p key={idx} className="mb-2 text-gray-700">
+                  {p}
+                </p>
+              ))}
 
             {section.subSections &&
               section.subSections.map((sub) => (
@@ -66,6 +69,13 @@ const PrivacyPage = () => {
                       ))}
                     </ul>
                   )}
+
+                  {sub.additionalParagraphs &&
+                    sub.additionalParagraphs.map((p, idx) => (
+                      <p key={idx} className="mb-2 text-gray-700">
+                        {p}
+                      </p>
+                    ))}
                 </div>
               ))}
           </div>

@@ -1,363 +1,339 @@
 const termsData = [
   {
-    title: "Conditions générales d’utilisation",
-    subtitle: "Dernière mise à jour : 17 juillet 2025",
+    title: "Conditions Générales d'Utilisation",
+    subtitle: "Dernière mise à jour : 26/08/2025",
+    paragraphs: [],
+  },
+  {
+    title: "1. Objet",
     paragraphs: [
-      "Bienvenue sur Kombineo, une solution de gestion de la relation client (CRM) proposée par la société Kombineo (« nous », « notre », « la Société »).",
-      "Les présentes Conditions générales d’utilisation (les « Conditions ») régissent l’accès à notre site web (https://kombineo.com) et l’usage de notre plateforme et de ses services associés (le « Service »). Elles constituent un accord juridiquement contraignant entre vous, utilisateur professionnel, et Kombineo.",
-      "L’utilisation du Service implique votre acceptation pleine et entière des présentes Conditions, ainsi que de notre Politique de confidentialité, disponible à l’adresse suivante : https://kombineo.com/privacy.",
-      "Si vous n'acceptez pas tout ou partie des Conditions, vous ne devez pas utiliser notre Service.",
-      "Vous pouvez nous contacter à support@kombineo.com pour toute question relative à ces Conditions.",
+      "Les présentes Conditions Générales d'Utilisation (ci-après \"CGU\") régissent l'accès et l'utilisation de la plateforme Kombineo éditée par KOMBINEO SERVICES FZCO.",
+      "En créant un compte ou en utilisant la plateforme, l'utilisateur reconnaît avoir lu et accepté les CGU.",
     ],
   },
   {
-    title: "1. Communications",
+    title: "2. Identité de l'éditeur",
     paragraphs: [
-      "En créant un compte sur Kombineo, vous acceptez que nous puissions vous envoyer des communications électroniques dans le cadre de l’utilisation du Service.",
-      "À tout moment, vous pouvez vous désinscrire des communications non essentielles (marketing, newsletters) en nous contactant à support@kombineo.com.",
+      "KOMBINEO SERVICES FZCO",
+      "DSO IFZA",
+      "00000 DUBAI UAE",
+      "E-mail : support@kombineo.com",
     ],
   },
   {
-    title: "2. Utilisation équitable & notifications SMS",
+    title: "3. Définitions",
     paragraphs: [
-      "Certaines fonctionnalités de Kombineo sont mutualisées...",
-      "Kombineo applique une politique d’utilisation équitable...",
+      "\"Compte\" : espace personnel permettant d'accéder aux services.",
+      "\"Utilisateur\" : toute personne physique accédant à la plateforme (closer, agent commercial indépendant, commercial, infopreneur, agence marketing, client, administrateur).",
+      "\"Client\" : la société ou personne souscrivant un abonnement.",
+      "\"Données Client\" : toutes les informations enregistrées via le CRM (prospects, clients, deals, paiements).",
+      "\"Services\" : les fonctionnalités SaaS proposées par Kombineo (gestion pipeline, suivi commissions, reporting).",
+      "\"Token\" : unité d'utilisation du Service représentant un accès, une action ou une ressource consommée par l'utilisateur sur la plateforme Kombineo.",
+      "Chaque token correspond, sans que cette liste soit exhaustive, à l'une des actions suivantes :",
     ],
     list: [
-      "compromet la stabilité ou la rapidité du Service",
-      "détourne la plateforme de son usage prévu (CRM, gestion client)",
-      "nuit à d’autres utilisateurs de Kombineo",
-    ],
-  },
-  {
-    title: "3. Achats et abonnements",
-    subSections: [
-      {
-        title: "a. Achats de services",
-        paragraphs: [
-          "L’accès à certaines fonctionnalités avancées de Kombineo peut nécessiter l’achat de services payants ou d’un abonnement...",
-        ],
-        list: [
-          "un moyen de paiement valide (carte bancaire, IBAN, etc.)",
-          "une adresse de facturation complète",
-          "ainsi que tout renseignement nécessaire au bon traitement de votre commande",
-        ],
-      },
-      {
-        title: "b. Abonnement récurrent",
-        paragraphs: ["Kombineo fonctionne selon un modèle d’abonnement..."],
-        list: [
-          "nom et prénom / nom de société",
-          "adresse complète",
-          "email",
-          "numéro de téléphone",
-          "et moyen de paiement accepté",
-        ],
-      },
-      {
-        title: "c. Période d’essai gratuite",
-        paragraphs: [
-          "Kombineo peut proposer un essai gratuit limité dans le temps...",
-        ],
-      },
-    ],
-  },
-  {
-    title: "4. Modification des tarifs",
-    paragraphs: ["Kombineo se réserve le droit de mettre à jour ses tarifs..."],
-  },
-  {
-    title: "5. Politique de remboursement",
-    paragraphs: [
-      "Toute somme versée n’est pas remboursable sauf disposition contraire prévue par la loi applicable.",
-    ],
-  },
-  {
-    title: "6. Contenu utilisateur",
-    subSections: [
-      {
-        title: "a. Responsabilité sur le contenu",
-        paragraphs: [
-          "Vous êtes entièrement responsable des contenus que vous enregistrez...",
-        ],
-        list: [
-          "ne publier que du contenu que vous êtes légalement autorisé à partager",
-          "ne pas violer les droits de tiers",
-          "ne pas stocker ni transmettre de contenu illicite",
-        ],
-      },
-      {
-        title: "b. Licence d’utilisation limitée",
-        paragraphs: [
-          "Vous conservez la propriété pleine et entière des contenus...",
-        ],
-      },
-      {
-        title: "c. Modération et suppression",
-        paragraphs: ["Kombineo peut restreindre ou supprimer tout contenu..."],
-        list: [
-          "qui enfreindrait la loi",
-          "violait les présentes Conditions",
-          "compromettrait la sécurité de la plateforme",
-        ],
-      },
-    ],
-  },
-  {
-    title: "7. Utilisations interdites",
-    paragraphs: [
-      "L’accès et l’utilisation de la plateforme Kombineo sont strictement réservés à des fins professionnelles.",
+      "la création d'un compte utilisateur ou d'un compte lead,",
+      "l'import, l'ajout ou le traitement d'un contact,",
+      "l'accès à une fonctionnalité payante ou à une ressource interne du CRM,",
+      "ou toute autre opération assimilée à une utilisation effective du Service.",
     ],
     subSections: [
       {
-        title: "a. Usages contraires à la loi",
-        list: [
-          "Utiliser le Service d’une manière qui enfreint toute loi",
-          "Tenter de manipuler ou exploiter le Service à des fins frauduleuses",
-        ],
-      },
-      {
-        title: "b. Atteintes à la sécurité",
-        list: [
-          "Interférer avec le fonctionnement de la plateforme",
-          "Introduire des logiciels malveillants",
-        ],
-      },
-      {
-        title: "c. Exploitation technique abusive",
-        list: [
-          "Utiliser des bots ou scrapers",
-          "Effectuer des extractions massives",
-        ],
-      },
-      {
-        title: "d. Communications abusives",
-        list: [
-          "Envoyer des contenus non sollicités",
-          "Diffuser des messages offensants ou discriminatoires",
+        title: "",
+        paragraphs: [
+          "Un token consommé est réputé constituer un usage complet du Service, indépendamment de la durée d'accès restante ou du nombre de connexions réalisées.",
         ],
       },
     ],
   },
   {
-    title: "8. Données analytiques",
+    title: "4. Accès aux services",
     paragraphs: [
-      "Kombineo peut faire appel à des prestataires tiers pour analyser les données d’utilisation.",
-    ],
-    links: [
-      {
-        label: "Politique de confidentialité Google",
-        href: "https://policies.google.com/privacy?hl=fr",
-      },
-      {
-        label: "Support Google Analytics",
-        href: "https://support.google.com/analytics/answer/6004245",
-      },
+      "Les services sont accessibles par abonnement payant selon la formule choisie.",
+      "L'accès est personnel et non transférable. Chaque utilisateur doit disposer de ses propres identifiants.",
+      "Le client est responsable de la confidentialité de ses accès.",
     ],
   },
   {
-    title: "9. Accès réservé aux utilisateurs majeurs",
+    title: "5. Utilisation de la plateforme",
     paragraphs: [
-      "La plateforme Kombineo est strictement réservée aux personnes âgées de 18 ans et plus, agissant à titre professionnel ou pour le compte d’une entreprise ou organisation.",
-      "En accédant à notre Service, vous déclarez et garantissez :",
+      "L'utilisateur s'engage à :",
     ],
     list: [
-      "être âgé d’au moins 18 ans",
-      "avoir la capacité juridique de conclure un contrat au nom de l’entité représentée",
-      "utiliser Kombineo exclusivement dans un cadre professionnel",
-    ],
-    subSections: [
-      {
-        title: "Accès interdit aux mineurs",
-        paragraphs: [
-          "L’accès ou l’utilisation du Service par des mineurs est formellement interdit. Toute tentative d’inscription par une personne non éligible pourra entraîner une suppression immédiate du compte.",
-        ],
-      },
+      "utiliser le service uniquement à des fins professionnelles licites,",
+      "ne pas introduire de données sensibles au sens du RGPD (santé, opinions politiques, orientation sexuelle, etc.),",
+      "ne pas détourner les services à des fins frauduleuses ou concurrentielles.",
     ],
   },
   {
-    title: "10. Création et gestion de compte",
+    title: "6. Données personnelles & RGPD",
     paragraphs: [
-      "Pour utiliser les services de Kombineo, vous devez créer un compte utilisateur en fournissant des informations exactes, à jour et complètes (identité, email professionnel, entreprise, etc.).",
-      "Le non-respect de cette exigence peut entraîner la suspension ou la résiliation de votre compte.",
+      "Responsable du traitement : KOMBINEO agit comme sous-traitant pour le compte de ses clients (closers, sociétés utilisatrices,closer, agent commercial indépendant, commercial, infopreneur, agence marketing).",
+      "Hébergement : les données sont stockées sur les serveurs sécurisés d'Amazon Web Services (AWS Europe – Dublin/Ireland).",
+      "Conformité RGPD :",
+    ],
+    list: [
+      "Base légale : exécution du contrat (dont abonnement).",
+      "Droits utilisateurs : accès, rectification, suppression, portabilité (demande via support@kombineo.com, délai de réponse 30 jours).",
+      "Conservation : données clients actives = durée de la relation contractuelle ; prospects inactifs = 3 ans max ; factures = 10 ans (obligation légale).",
+      "Sous-traitants : AWS (hébergement).",
+      "Violation de données : en cas d'incident, Kombineo notifiera la CNIL sous 72h et les clients concernés.",
     ],
     subSections: [
       {
-        title: "a. Sécurité du compte",
+        title: "",
         paragraphs: [
-          "Vous êtes entièrement responsable de la confidentialité de vos identifiants d’accès (mot de passe, accès administrateur) et de toute activité réalisée depuis votre compte, qu’elle ait été autorisée ou non.",
-          "En cas d’accès suspect, de perte de mot de passe ou de compromission de votre compte, vous devez nous contacter sans délai à support@kombineo.com.",
+          "Une Politique de confidentialité distincte détaille l'ensemble des traitements de données.",
         ],
       },
       {
-        title: "b. Noms d’utilisateur et conduite",
+        title: "Utilisation des données à des fins de communication et prospection",
+        paragraphs: [
+          "En créant un compte sur Kombineo, en s'inscrivant à la période d'essai, en téléchargeant une ressource ou en complétant un formulaire, l'Utilisateur accepte expressément que ses données (nom, prénom, adresse e-mail, numéro de téléphone, données de navigation et d'usage de la plateforme) puissent être utilisées par Kombineo pour :",
+        ],
         list: [
-          "usurper l’identité d’un tiers",
-          "inclure de marques déposées sans autorisation",
-          "contenir des propos injurieux, offensants ou ambigus",
+          "le contacter par e-mail, SMS ou téléphone,",
+          "lui transmettre des informations liées au Service,",
+          "lui proposer des fonctionnalités, offres ou mises à jour,",
+          "lui adresser des contenus commerciaux ou marketing,",
+          "et lui partager des communications relatives à son abonnement, à la sécurité ou au support.",
         ],
-        paragraphs: [
-          "Nous nous réservons le droit de refuser l’enregistrement, suspendre ou supprimer tout compte, à notre entière discrétion, notamment en cas de non-respect de nos Conditions ou de comportement abusif sur la plateforme.",
+        paragraphs2: [
+          "Cet accord constitue un opt-in explicite, conforme à l'article 6.1.a du RGPD (consentement), permettant à Kombineo d'effectuer des actions de prospection commerciale auprès de l'Utilisateur.",
+          "L'Utilisateur peut retirer son consentement à tout moment via un lien de désinscription présent dans chaque e-mail ou en envoyant une demande à : support@kombineo.com",
         ],
       },
     ],
   },
   {
-    title: "11. Propriété intellectuelle",
+    title: "7. Support & maintenance",
     paragraphs: [
-      "L’ensemble de la plateforme Kombineo, y compris son architecture logicielle, son code source, ses éléments graphiques, ses interfaces, sa documentation, ainsi que toutes ses fonctionnalités, est la propriété exclusive de Kombineo ou est utilisé sous licence par la société.",
-      "Tous les contenus originaux présents sur le Service sont protégés par les lois applicables en matière de droit d’auteur, de marques et de propriété intellectuelle.",
-      "Aucune reproduction, modification, distribution, extraction ou réutilisation, totale ou partielle, de ces éléments ne peut être effectuée sans autorisation écrite préalable de Kombineo. L’usage non autorisé de nos marques, logos, design ou tout autre élément constitutif de notre identité visuelle est strictement interdit.",
+      "Support disponible par e-mail : support@kombineo.com.",
+      "Maintenance corrective et évolutive incluse dans l'abonnement.",
+      "En cas d'indisponibilité temporaire, Kombineo ne pourra être tenu responsable sauf faute lourde.",
     ],
   },
   {
-    title: "12. Respect des droits d’auteur",
+    title: "8. Abonnement, facturation et fonctionnement des tokens",
     paragraphs: [
-      "Kombineo attache une grande importance au respect des droits de propriété intellectuelle des tiers, et s’engage à traiter rapidement toute demande fondée portant sur une atteinte présumée à ces droits.",
-      "Si vous pensez qu’un contenu hébergé sur notre plateforme porte atteinte à un droit d’auteur que vous détenez, vous pouvez nous adresser une réclamation à l’adresse suivante : legal@kombineo.com, avec l’objet : « Réclamation pour violation de droits d’auteur ».",
-      "Votre demande devra inclure :",
-    ],
-    list: [
-      "une description précise de l'œuvre protégée",
-      "l’URL ou l’identifiant du contenu concerné",
-      "une déclaration sur l'honneur indiquant que vous êtes titulaire des droits ou mandaté pour agir en leur nom",
-      "vos coordonnées complètes",
+      "Les prix sont indiqués en euros (€) hors taxes.",
+      "L'accès au Service est proposé via plusieurs formules d'abonnement : SOLO, SCALE, POWER et ENTERPRISE.",
+      "L'abonnement est payable mensuellement par prélèvement automatique ou annuellement à l'avance.",
     ],
     subSections: [
       {
-        title: "Contenu litigieux",
+        title: "8.1. Période d'essai & Tokens",
         paragraphs: [
-          "Kombineo se réserve le droit de suspendre ou supprimer tout contenu litigieux, ainsi que le compte associé, si une violation est confirmée. En cas de déclaration abusive, le déclarant pourra être tenu responsable, notamment en cas de mauvaise foi ou d’allégations mensongères.",
-        ],
-      },
-    ],
-  },
-  {
-    title: "13. Suggestions et signalements",
-    paragraphs: [
-      "Vous pouvez nous transmettre des suggestions, retours, idées ou signalements de bugs concernant notre Service à l’adresse support@kombineo.com, ou via les outils intégrés ou partenaires tiers.",
-      "En soumettant un retour, vous acceptez expressément que :",
-    ],
-    list: [
-      "vous ne revendiquez aucun droit de propriété sur les idées ou améliorations soumises",
-      "Kombineo pourra les utiliser librement, sans obligation de vous en attribuer la paternité ni de vous rémunérer",
-      "les informations partagées ne sont pas confidentielles ou exclusives",
-      "vous ne nous soumettez rien que vous n’êtes pas autorisé à divulguer",
-    ],
-    subSections: [
-      {
-        title: "Outils tiers utilisés",
-        paragraphs: [
-          "Ces retours peuvent être collectés ou analysés via des solutions de suivi technique tierces, telles que :",
-        ],
-        links: [
-          {
-            label: "Sentry (Functional Software Inc.)",
-            href: "https://sentry.io/privacy",
-          },
-          { label: "Raygun (Raygun Ltd.)", href: "https://raygun.com/privacy" },
-        ],
-      },
-    ],
-  },
-  {
-    title: "14. Liens vers des sites ou services tiers",
-    paragraphs: [
-      "La plateforme Kombineo peut inclure des liens vers des sites web, plateformes ou services appartenant à des tiers. Ces liens sont fournis uniquement à titre informatif ou fonctionnel (ex. intégrations externes, documentation, partenaires).",
-      "Kombineo n’exerce aucun contrôle sur le contenu, les pratiques de sécurité ou les politiques de confidentialité de ces services externes, et décline toute responsabilité à leur égard. La présence d’un lien n’implique aucune validation ni approbation de notre part.",
-      "Vous accédez à ces ressources sous votre seule responsabilité. Nous vous encourageons à consulter attentivement leurs conditions d’utilisation et politiques de confidentialité avant de les utiliser.",
-    ],
-  },
-  {
-    title: "15. Absence de garantie",
-    paragraphs: [
-      "Le Service Kombineo est fourni « en l’état » et selon sa disponibilité. Nous ne garantissons ni l’absence d’erreur, ni l’exactitude, ni la continuité du Service à tout moment.",
-      "Plus précisément, Kombineo ne garantit pas que :",
-    ],
-    list: [
-      "le Service fonctionnera sans interruption",
-      "les résultats obtenus seront exempts d’erreurs ou adaptés à un usage spécifique",
-      "les défauts seront automatiquement corrigés",
-      "l’accès au Service sera totalement sécurisé ou exempt de tout logiciel malveillant",
-    ],
-    subSections: [
-      {
-        title: "Exclusions",
-        paragraphs: [
-          "Toutes les garanties implicites, y compris celles de qualité marchande, d’adéquation à un usage particulier ou d’absence de contrefaçon, sont expressément exclues, dans les limites autorisées par la loi.",
-        ],
-      },
-    ],
-  },
-  {
-    title: "16. Limitation de responsabilité",
-    paragraphs: [
-      "Dans les limites prévues par la législation applicable, Kombineo ne pourra être tenue responsable d’aucun dommage indirect, consécutif, spécial ou punitif, résultant de l’utilisation du Service, de son indisponibilité, ou de toute perte de données, d’opportunité commerciale ou de chiffre d’affaires.",
-      "Notre responsabilité totale, en cas de dommage prouvé et non exclu par la loi, sera strictement limitée aux montants que vous avez effectivement payés à Kombineo pour l’accès au Service durant les 12 mois précédant l’événement à l’origine de la réclamation.",
-      "Certaines juridictions ne permettant pas de telles limitations, il est possible que ces exclusions ne s’appliquent pas à vous dans leur intégralité.",
-    ],
-  },
-  {
-    title: "17. Résiliation",
-    paragraphs: [
-      "Kombineo se réserve le droit de suspendre ou de résilier votre compte, avec ou sans préavis, en cas de :",
-    ],
-    list: [
-      "violation des présentes Conditions",
-      "comportement frauduleux ou préjudiciable",
-      "usage abusif ou contraire à l’éthique de la plateforme",
-    ],
-    subSections: [
-      {
-        title: "Fin de contrat par l'utilisateur",
-        paragraphs: [
-          "Vous pouvez à tout moment mettre fin à votre utilisation du Service en résiliant votre abonnement ou en supprimant votre compte via votre espace administrateur.",
+          "Kombineo propose une période d'essai gratuite limitée pour les offres SOLO, SCALE et POWER, à condition qu'aucun token n'ait été consommé.",
         ],
       },
       {
-        title: "Clauses survivantes",
+        title: "Rappel : Définition d'un token",
+        paragraphs: [
+          "Un token est une unité d'utilisation du Service.",
+          "La consommation d'un token correspond notamment, sans limitation, à :",
+        ],
         list: [
-          "Propriété intellectuelle",
-          "Absence de garantie",
-          "Limitation de responsabilité",
-          "Traitement des données et droits d’auteur",
+          "la création d'un lead,",
+          "la création d'un contact,",
+          "l'import de données,",
+          "l'ajout d'un utilisateur,",
+          "l'accès à une fonctionnalité active du CRM,",
+          "ou toute autre action assimilée à une utilisation effective du Service.",
+        ],
+        paragraphs2: [
+          "Dès lors qu'un premier token est consommé, la période d'essai prend immédiatement fin et l'abonnement devient exigible, peu importe la durée restant dans l'essai.",
+          "La consommation d'un token équivaut à un \"usage\" du Service et annule définitivement l'essai gratuit.",
+          "Aucun remboursement ou prolongation ne pourra être accordé, même en cas de non-utilisation ultérieure du Service.",
+        ],
+      },
+      {
+        title: "8.2. Offre ENTERPRISE",
+        paragraphs: [
+          "L'offre ENTERPRISE est exclusivement proposée sur devis, selon les besoins spécifiques du Client.",
+          "Elle ne bénéficie d'aucune période d'essai gratuite.",
+          "Les conditions tarifaires, contractuelles et techniques font l'objet d'une validation écrite entre le Client et Kombineo.",
+        ],
+      },
+      {
+        title: "8.3. Absence de remboursement",
+        paragraphs: [
+          "Aucun remboursement ne sera accordé :",
+        ],
+        list: [
+          "en cas d'interruption volontaire de l'abonnement en cours de période,",
+          "en cas de consommation partielle ou totale des tokens,",
+          "ou en cas de non-utilisation du Service après activation.",
+        ],
+        paragraphs2: [
+          "Les tokens consommés sont définitifs, non remboursables et non transférables.",
+        ],
+      },
+      {
+        title: "8.4. Impayés",
+        paragraphs: [
+          "En cas d'impayé, Kombineo se réserve le droit de :",
+        ],
+        list: [
+          "suspendre l'accès au compte,",
+          "supprimer ou restreindre certaines fonctionnalités,",
+          "résilier le contrat si la situation n'est pas régularisée dans un délai raisonnable.",
+        ],
+        paragraphs2: [
+          "Les tokens consommés avant suspension restent acquis et non remboursables.",
         ],
       },
     ],
   },
   {
-    title: "18. Modifications du Service",
-    paragraphs: [
-      "Kombineo se réserve le droit de modifier, suspendre ou interrompre tout ou partie du Service, à tout moment et sans préavis, que ce soit pour des raisons techniques, commerciales, de sécurité ou de maintenance.",
-      "Cela inclut la modification de fonctionnalités existantes, l’ajout de nouvelles fonctionnalités, ou le retrait d’un service ou d’un contenu spécifique. Nous ne saurions être tenus responsables en cas d’indisponibilité temporaire ou définitive de la plateforme ou de l’un de ses composants.",
-      "Nous pouvons également restreindre l’accès à certaines fonctionnalités ou à l’ensemble du Service à tout utilisateur, enregistré ou non, selon notre propre appréciation.",
+    title: "9. Gestion, décompte et affichage des tokens",
+    subSections: [
+      {
+        title: "9.1. Définition générale",
+        paragraphs: [
+          "Les tokens sont des unités d'utilisation du Service permettant de mesurer l'usage réel de Kombineo.",
+          "Chaque action susceptible d'engendrer un traitement de données, d'activer une fonctionnalité ou de créer un élément dans le CRM peut entraîner la consommation d'un token.",
+        ],
+      },
+      {
+        title: "9.2. Actions entraînant la consommation d'un token",
+        paragraphs: [
+          "Sans limitation, un token est consommé notamment lors de :",
+        ],
+        list: [
+          "la création d'un contact, d'un lead ou d'un utilisateur,",
+          "l'importation de données,",
+          "l'envoi ou la synchronisation d'informations,",
+          "l'accès à une fonctionnalité nécessitant un traitement actif du CRM,",
+          "la création d'un pipeline ou d'un élément structurant du compte,",
+          "ou toute autre opération assimilable à un usage réel du Service.",
+        ],
+        paragraphs2: [
+          "La liste des actions pouvant consommer des tokens peut évoluer au fil des mises à jour du Service.",
+        ],
+      },
+      {
+        title: "9.3. Affichage des tokens",
+        paragraphs: [
+          "Kombineo met à disposition un tableau de bord permettant au Client de consulter :",
+        ],
+        list: [
+          "le nombre total de tokens consommés,",
+          "le nombre de tokens consommés sur la période en cours,",
+          "l'historique des consommations,",
+          "et, le cas échéant, le nombre de tokens inclus dans son abonnement.",
+        ],
+        paragraphs2: [
+          "Les informations sont mises à jour en temps réel ou dans un délai raisonnable tenant compte des contraintes techniques.",
+        ],
+      },
+      {
+        title: "9.4. Dépassement de tokens",
+        paragraphs: [
+          "En cas de consommation dépassant le nombre de tokens inclus dans l'abonnement :",
+        ],
+        list: [
+          "un système de facturation additionnelle pourra s'appliquer,",
+          "ou certaines fonctionnalités pourront être temporairement restreintes, selon la formule souscrite.",
+        ],
+        paragraphs2: [
+          "Les modalités exactes (prix, limites, plafond) sont précisées dans l'offre choisie ou communiquées au Client.",
+        ],
+      },
+      {
+        title: "9.5. Irréversibilité de la consommation",
+        paragraphs: [
+          "Tout token consommé est considéré comme définitivement utilisé et ne peut donner lieu à aucun remboursement, report ou recrédit, y compris :",
+        ],
+        list: [
+          "en cas d'erreur de manipulation,",
+          "en cas d'abandon du compte,",
+          "en cas d'usage partiel,",
+          "ou en cas de suppression ultérieure des données créées.",
+        ],
+      },
+      {
+        title: "9.6. Tokens et période d'essai",
+        paragraphs: [
+          "La consommation d'un seul token met immédiatement fin à la période d'essai gratuite pour les offres SOLO, SCALE et POWER.",
+          "L'abonnement devient exigible dès la première action entraînant la consommation d'un token.",
+        ],
+      },
+      {
+        title: "9.7. Évolutions et transparence",
+        paragraphs: [
+          "Kombineo peut mettre à jour le mode de calcul, d'attribution ou de consommation des tokens pour améliorer le fonctionnement du Service.",
+          "Toute évolution majeure fera l'objet d'une information au Client.",
+        ],
+      },
     ],
   },
   {
-    title: "19. Modification des Conditions d'utilisation",
+    title: "10. Propriété intellectuelle",
     paragraphs: [
-      "Kombineo peut mettre à jour les présentes Conditions à tout moment. Toute modification sera publiée sur le site à l’adresse : https://kombineo.com/terms et prendra effet dès sa publication, sauf indication contraire.",
-      "Il est de votre responsabilité de consulter régulièrement cette page pour prendre connaissance des éventuelles mises à jour.",
-      "Votre utilisation continue du Service après publication des Conditions mises à jour vaut acceptation intégrale des nouvelles dispositions. Si vous n’acceptez pas les modifications, vous devez cesser d’utiliser la plateforme.",
+      "Kombineo conserve la propriété exclusive de la plateforme, du code, des logos et contenus.",
+      "Le client conserve la propriété de ses Données Client.",
+      "Une licence limitée, non exclusive et non transférable est concédée pendant la durée de l'abonnement.",
     ],
   },
   {
-    title: "20. Renonciation et validité partielle",
+    title: "11. Responsabilités",
     paragraphs: [
-      "Le fait que Kombineo n’exerce pas ou ne fasse pas appliquer une clause spécifique des présentes Conditions ne pourra être interprété comme une renonciation à ce droit.",
-      "Si une disposition des présentes Conditions devait être jugée invalide, inapplicable ou illégale par un tribunal compétent, elle sera limitée ou supprimée dans la mesure strictement nécessaire, sans affecter la validité des autres dispositions qui continueront d’être pleinement applicables.",
+      "Kombineo n'est responsable que des dommages directs prouvés, dans la limite des montants payés au titre des 12 derniers mois.",
+      "Kombineo ne peut être tenu responsable :",
+    ],
+    list: [
+      "d'une mauvaise utilisation du service,",
+      "de la perte de données imputable au client,",
+      "d'indisponibilités liées à un tiers (ex. AWS).",
     ],
   },
   {
-    title: "21. Acceptation des Conditions",
+    title: "12. Résiliation",
     paragraphs: [
-      "En accédant à la plateforme Kombineo ou en l’utilisant, vous reconnaissez avoir lu, compris et accepté l’ensemble des Conditions d’utilisation applicables.",
+      "Le client peut résilier son abonnement à tout moment via son interface, la résiliation prenant effet à la prochaine échéance.",
+      "Kombineo peut suspendre ou résilier en cas de :",
+    ],
+    list: [
+      "violation grave des CGU,",
+      "utilisation frauduleuse,",
+      "non-paiement.",
+    ],
+    subSections: [
+      {
+        title: "",
+        paragraphs: [
+          "À la résiliation, les données seront supprimées ou restituées sous 30 jours (sauf obligations légales).",
+        ],
+      },
     ],
   },
   {
-    title: "22. Nous contacter",
+    title: "13. Loi applicable & juridiction (clause d'arbitrage international)",
     paragraphs: [
-      "Pour toute question relative aux présentes Conditions, vous pouvez nous contacter à l’adresse suivante : support@kombineo.com",
+      "Les présentes Conditions sont régies par le droit des Émirats Arabes Unis.",
+      "Tout différend, litige ou réclamation résultant de l'interprétation ou de l'exécution des présentes Conditions sera soumis à l'arbitrage du Dubai International Financial Centre – London Court of International Arbitration (DIFC-LCIA), conformément à son règlement d'arbitrage.",
+    ],
+    list: [
+      "Siège de l'arbitrage : Dubai International Financial Centre (EAU)",
+      "Langue de l'arbitrage : anglais",
+      "Nombre d'arbitres : un (1), désigné conformément au règlement DIFC-LCIA",
+      "Droit applicable : droit des Émirats Arabes Unis, sans préjudice de l'application obligatoire du RGPD pour les utilisateurs établis dans l'Union européenne.",
+    ],
+    subSections: [
+      {
+        title: "",
+        paragraphs: [
+          "La sentence arbitrale sera définitive et liera les deux parties.",
+        ],
+      },
+    ],
+  },
+  {
+    title: "14. Contact",
+    paragraphs: [
+      "Pour toute question concernant les présentes CGU :",
+      "support@kombineo.com",
     ],
   },
 ];

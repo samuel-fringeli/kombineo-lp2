@@ -1,282 +1,143 @@
 export const privacyData = {
-  title: "Politique de confidentialité",
-  lastUpdated: "17 juillet 2025",
+  title: "Politique de Confidentialité",
+  lastUpdated: "26/08/2025",
   sections: [
     {
       number: "1",
-      title: "Introduction",
+      title: "Responsable du traitement",
       paragraphs: [
-        "Bienvenue sur Kombineo, solution SaaS de gestion de la relation client exploitée par la société Kombineo (« nous », « notre », ou « la Société »).",
-        "La présente Politique de confidentialité explique comment nous collectons, utilisons, stockons, partageons et protégeons vos données personnelles lorsque vous accédez à notre plateforme ou utilisez l’un de nos services via le site https://kombineo.com (ci-après le « Service »).",
-        "En utilisant notre Service, vous acceptez les pratiques décrites dans cette Politique, ainsi que nos Conditions générales d’utilisation. Sauf mention contraire, les termes définis ici ont la même signification que ceux utilisés dans nos Conditions.",
-        "Notre objectif est de garantir transparence, sécurité et conformité légale dans notre traitement des données personnelles, notamment en application du Règlement Général sur la Protection des Données (RGPD) pour les utilisateurs situés dans l’Union européenne.",
+        "La société KOMBINEO SERVICES FZCO, DSO IFZA 00000 DUBAI UAE, est responsable du traitement des données collectées via le site www.kombineo.com.",
+        "Cas particulier : lorsque nos clients utilisent le CRM pour gérer leurs prospects et contacts, ils agissent en tant que Responsables de traitement et Kombineo agit en Sous-traitant (voir DPA).",
       ],
     },
     {
       number: "2",
-      title: "Définitions",
+      title: "Données collectées",
+      paragraphs: [
+        "Nous pouvons collecter les données suivantes :",
+      ],
       list: [
-        {
-          term: "Service",
-          definition:
-            "désigne la plateforme web accessible à l’adresse https://kombineo.com, exploitée par Kombineo, et l’ensemble de ses fonctionnalités logicielles.",
-        },
-        {
-          term: "Données personnelles",
-          definition:
-            "toute information permettant d’identifier, directement ou indirectement, une personne physique (nom, adresse e-mail, identifiant de compte, etc.).",
-        },
-        {
-          term: "Cookies",
-          definition:
-            "fichiers déposés et stockés sur votre appareil permettant de collecter certaines informations de navigation.",
-        },
-        {
-          term: "Responsable du traitement",
-          definition:
-            "la personne qui détermine les finalités et les moyens du traitement. Kombineo agit en tant que Responsable du traitement pour les données collectées pour ses propres besoins.",
-        },
-        {
-          term: "Sous-traitant",
-          definition:
-            "toute entité externe qui traite des données personnelles pour le compte du Responsable du traitement.",
-        },
-        {
-          term: "Personne concernée",
-          definition:
-            "l’individu auquel les Données personnelles se rapportent — généralement un utilisateur ou un contact CRM.",
-        },
-        {
-          term: "Utilisateur",
-          definition:
-            "toute personne accédant au Service : client, visiteur, utilisateur autorisé ou prospect.",
-        },
+        "Identité : nom, prénom, fonction, entreprise.",
+        "Coordonnées : e-mail, téléphone, adresse postale.",
+        "Données de connexion : identifiants, logs, adresse IP.",
+        "Données financières : informations de facturation, paiements.",
+        "Données commerciales : historique d'utilisation du CRM, deals, factures.",
       ],
     },
     {
       number: "3",
-      title: "Collecte et utilisation des données",
+      title: "Finalités des traitements",
+      paragraphs: [
+        "Vos données sont traitées pour :",
+      ],
+      list: [
+        "Fournir l'accès à la plateforme et aux services souscrits.",
+        "Gérer la facturation et la comptabilité.",
+        "Répondre aux demandes d'assistance.",
+        "Sécuriser l'accès et prévenir les fraudes.",
+        "Améliorer nos services (statistiques anonymisées).",
+        "Réaliser des actions de prospection et communication (site vitrine uniquement, sous réserve de votre consentement).",
+      ],
       subSections: [
         {
           letter: "a",
-          title: "Finalité de la collecte",
-          list: [
-            "assurer le fonctionnement technique du Service",
-            "gérer les comptes utilisateurs",
-            "améliorer l’expérience client",
-            "assurer la sécurité de la plateforme",
-            "vous transmettre des communications adaptées",
-          ],
+          title: "Utilisation des données à des fins de communication et prospection",
           paragraphs: [
-            "Nous ne collectons que les données strictement nécessaires à ces finalités.",
+            "En créant un compte sur Kombineo, en s'inscrivant à la période d'essai, en téléchargeant une ressource ou en complétant un formulaire, l'Utilisateur accepte expressément que ses données (nom, prénom, adresse e-mail, numéro de téléphone, données de navigation et d'usage de la plateforme) puissent être utilisées par Kombineo pour :",
           ],
-        },
-        {
-          letter: "b",
-          title: "Données personnelles que vous nous communiquez",
           list: [
-            "créez un compte sur Kombineo",
-            "remplissez un formulaire de contact",
-            "planifiez une démonstration ou un rendez-vous",
-            "échangez avec notre équipe support",
-            "utilisez nos fonctionnalités de communication intégrée",
+            "le contacter par e-mail, SMS ou téléphone,",
+            "lui transmettre des informations liées au Service,",
+            "lui proposer des fonctionnalités, offres ou mises à jour,",
+            "lui adresser des contenus commerciaux ou marketing,",
+            "et lui partager des communications relatives à son abonnement, à la sécurité ou au support.",
           ],
-          paragraphs: [
-            "Les données collectées incluent : prénom, nom, e-mail professionnel, téléphone, société, informations professionnelles.",
-            "Ces données servent à : accéder à l’espace utilisateur, assurer le suivi commercial, envoyer des emails d’information ou prospection.",
-            "Vous pouvez refuser les messages non essentiels via le lien de désabonnement ou en contactant privacy@kombineo.com.",
-          ],
-        },
-        {
-          letter: "c",
-          title: "Données que nous collectons automatiquement",
-          list: [
-            "adresse IP",
-            "type/version du navigateur",
-            "pages consultées et durée",
-            "date et heure",
-            "système d’exploitation",
-            "informations appareil (mobile/desktop)",
-            "identifiants techniques de session",
-          ],
-          paragraphs: [
-            "Ces données sont utilisées à des fins de sécurité, performance et analyse. Elles ne permettent pas de vous identifier directement sauf obligation légale ou incident critique.",
-          ],
-        },
-        {
-          letter: "d",
-          title: "Cookies et technologies similaires",
-          list: [
-            "Cookies strictement nécessaires",
-            "Cookies de performance",
-            "Cookies de préférence",
-            "Cookies marketing (avec consentement)",
-          ],
-          paragraphs: [
-            "Utilisés pour garantir le bon fonctionnement, mémoriser vos préférences, sécuriser les sessions, analyser le trafic et proposer du contenu personnalisé.",
-            "Vous pouvez gérer les cookies via votre navigateur, certaines fonctionnalités peuvent devenir inaccessibles.",
-          ],
-        },
-        {
-          letter: "e",
-          title: "Données provenant de sources tierces",
-          list: [
-            "clients professionnels (ex. CRM)",
-            "prestataires techniques",
-            "outils analytiques/publicitaires",
-          ],
-          paragraphs: [
-            "Ces données sont intégrées dans la limite nécessaire à la fourniture du Service et ne sont jamais revendues.",
+          additionalParagraphs: [
+            "Cet accord constitue un opt-in explicite, conforme à l'article 6.1.a du RGPD (consentement), permettant à Kombineo d'effectuer des actions de prospection commerciale auprès de l'Utilisateur.",
+            "L'Utilisateur peut retirer son consentement à tout moment via un lien de désinscription présent dans chaque e-mail ou en envoyant une demande à : support@kombineo.com",
           ],
         },
       ],
     },
     {
       number: "4",
-      title: "Utilisation des données collectées",
+      title: "Bases légales",
       list: [
-        "Fournir un accès sécurisé à la plateforme",
-        "Gérer les comptes utilisateurs et préférences",
-        "Informer sur les mises à jour",
-        "Assurer le support client",
-        "Analyser les usages et améliorer les fonctionnalités",
-        "Surveiller l’intégrité du système",
-        "Gérer abonnements et paiements",
-        "Envoyer des communications pertinentes",
-        "Remplir obligations légales",
-        "Répondre aux consentements donnés",
+        "Exécution du contrat (dont abonnement)",
+        "Obligation légale (facturation, comptabilité).",
+        "Intérêt légitime (sécurité, amélioration du service).",
+        "Consentement (prospection commerciale via site vitrine, cookies publicitaires).",
       ],
     },
     {
       number: "5",
-      title: "Conservation des données",
+      title: "Destinataires",
       list: [
-        "Données de compte : jusqu’à 3 ans après fermeture",
-        "Données de facturation : 10 ans (exigences fiscales)",
-        "Données d’usage : périodes limitées sauf sécurité/incidents",
+        "Équipes internes de Kombineo.",
+        "Hébergeur : Amazon Web Services (AWS Europe).",
+        "Prestataires tiers (Paddle)",
+        "Autorités administratives et judiciaires si la loi l'exige.",
       ],
     },
     {
       number: "6",
-      title: "Localisation et transfert des données",
-      paragraphs: [
-        "Les données peuvent être traitées dans ou hors UE, selon des garanties adéquates : décision d’adéquation, clauses contractuelles types ou consentement explicite.",
-        "Mesures strictes assurent confidentialité, intégrité et résilience des données.",
+      title: "Durée de conservation",
+      list: [
+        "Comptes utilisateurs : durée du contrat + 12 mois.",
+        "Prospects : 3 ans après le dernier contact.",
+        "Factures et données comptables : 10 ans.",
+        "Cookies analytiques/publicitaires : max. 13 mois.",
       ],
     },
     {
       number: "7",
-      title: "Divulgation des données personnelles",
-      list: [
-        "Prestataires techniques",
-        "Partenaires intégrateurs (avec autorisation)",
-        "Autorités légales (obligation légale)",
-        "Fusions, cessions ou restructurations",
-        "Avec votre accord explicite",
-      ],
+      title: "Transferts hors UE",
       paragraphs: [
-        "Kombineo ne vend, ne loue ni ne cède vos données à des fins commerciales.",
+        "Les données sont hébergées au sein de l'Union européenne via AWS Europe.",
+        "En cas de transfert hors UE (par un prestataire tiers), celui-ci est encadré par les Clauses Contractuelles Types (SCC) ou le Data Privacy Framework.",
       ],
     },
     {
       number: "8",
-      title: "Sécurité des données",
-      list: [
-        "Chiffrement des données",
-        "Accès contrôlés",
-        "Audits réguliers",
-        "Redondance des systèmes",
-      ],
+      title: "Droits des utilisateurs",
       paragraphs: [
-        "Aucun système n’est exempt de risques. En cas de faille, vous serez notifié dans les délais légaux.",
+        "Conformément au RGPD, vous disposez de :",
+      ],
+      list: [
+        "D'un droit d'accès, rectification, suppression.",
+        "D'un droit d'opposition et de limitation.",
+        "D'un droit à la portabilité.",
+      ],
+      additionalParagraphs: [
+        "Pour exercer vos droits : support@kombineo.com",
       ],
     },
     {
       number: "9",
-      title: "Vos droits (résidents UE/EEE)",
-      list: [
-        "Droit d’accès",
-        "Droit de rectification",
-        "Droit à l’effacement",
-        "Droit à la limitation",
-        "Droit à la portabilité",
-        "Droit d’opposition",
-        "Droit de retirer son consentement",
-      ],
+      title: "Sécurité des données",
       paragraphs: [
-        "Pour exercer vos droits, contactez : privacy@kombineo.com. Une pièce d’identité peut être requise. Réponse sous 30 jours.",
+        "Kombineo met en œuvre des mesures techniques et organisationnelles pour assurer la sécurité des données :",
+      ],
+      list: [
+        "chiffrement en transit et au repos,",
+        "authentification sécurisée,",
+        "gestion des accès et des habilitations,",
+        "sauvegardes régulières.",
       ],
     },
     {
       number: "10",
-      title: "Vos droits (résidents de Californie – CCPA)",
-      list: [
-        "Savoir quelles données sont collectées",
-        "Demander leur suppression",
-        "Refuser leur revente ou partage (Kombineo ne revend pas de données)",
-      ],
+      title: "Violations de données",
       paragraphs: [
-        "Exercez vos droits via privacy@kombineo.com. Aucun traitement discriminatoire ne sera appliqué.",
+        "En cas de violation de données personnelles, nous notifierons l'incident à l'autorité de contrôle compétente (CNIL) dans les 72 heures et, si nécessaire, aux personnes concernées.",
       ],
     },
     {
       number: "11",
-      title: "Prestataires de services",
-      subSections: [
-        {
-          letter: "a",
-          title: "Services d’analyse",
-          list: ["Google Analytics", "Autres outils techniques selon les cas"],
-          paragraphs: [
-            "Données d’usage anonymes. Jamais croisées sans consentement explicite.",
-          ],
-        },
-        {
-          letter: "b",
-          title: "Paiements",
-          paragraphs: [
-            "Prestataires comme Stripe traitent les paiements. Aucune donnée bancaire n’est stockée par Kombineo. Transactions sécurisées selon PCI-DSS.",
-          ],
-        },
-        {
-          letter: "c",
-          title: "Intégration Google / API Gmail",
-          paragraphs: [
-            "Accès Gmail utilisé uniquement pour la fonctionnalité prévue. Aucune exploitation secondaire.",
-            "Respect de la politique : https://developers.google.com/terms/api-services-user-data-policy",
-          ],
-        },
-        {
-          letter: "d",
-          title: "Liens externes",
-          paragraphs: [
-            "Nous ne sommes pas responsables du contenu ou des pratiques des sites tiers. Consultez leurs politiques respectives.",
-          ],
-        },
-      ],
-    },
-    {
-      number: "12",
-      title: "Utilisation par des mineurs",
+      title: "Contact",
       paragraphs: [
-        "La plateforme est réservée aux professionnels majeurs. Aucune collecte volontaire de données de mineurs.",
-        "Contactez-nous à privacy@kombineo.com pour toute suppression nécessaire.",
-      ],
-    },
-    {
-      number: "13",
-      title: "Modifications de la politique de confidentialité",
-      paragraphs: [
-        "Nous nous réservons le droit de modifier cette Politique. Vous serez informé par e-mail ou avis visible.",
-        "Date de mise à jour : 17 juillet 2025.",
-        "En continuant à utiliser le Service, vous acceptez les nouvelles dispositions.",
-      ],
-    },
-    {
-      number: "14",
-      title: "Nous contacter",
-      paragraphs: [
-        "Pour toute question ou demande relative à cette Politique : privacy@kombineo.com",
+        "Pour toute question relative à cette Politique ou à vos droits :",
+        "support@kombineo.com",
       ],
     },
   ],
